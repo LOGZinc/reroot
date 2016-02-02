@@ -1,0 +1,12 @@
+.btn{
+
+}
+
+// 
+// @TODO: Add docs to mixin-name!
+//
+@mixin btn($color) {
+  	padding: 10px;
+  	background-color: $color;
+  	border: 1px solid $orange;
+}
