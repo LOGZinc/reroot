@@ -1,0 +1,44 @@
+.sns_space {
+  width: 100%;
+  font-size: 30px;
+  color: $orange;
+  padding: 3%;
+
+  span {
+    color: $light-pink;
+    font-size: 50px;
+  }
+
+  h2 {
+    border-bottom: solid 3px $light-pink;
+    width: 20%;
+    text-align: right;
+    margin-bottom: 5%;
+    padding-right: 3%;
+  }
+
+    .sns_contents {
+      display: table;
+      width: 100%;
+      border-style: solid;
+      border-color: $light-pink;
+      border-width: 3px;
+      padding: 2.5%;
+
+          .twitter,
+          .facebook {
+              display: table-cell;
+
+              @media screen and (max-width: 768px){
+                display: block;
+                width: 100%;
+
+                .twitter-timeline {
+                  display: block !important;
+                  margin-left: auto;
+                  margin-right: auto;
+                }
+              }
+          }
+      }
+  }

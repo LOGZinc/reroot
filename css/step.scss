@@ -1,0 +1,44 @@
+.step_space {
+  font-size: 30px;
+  color: $orange;
+  padding: 3%;
+
+  .initial {
+    border-left: solid 3px $light-pink;
+    border-right: solid 3px $light-pink;
+    border-top: solid 3px $light-pink;
+    
+    color: $light-pink;
+    font-size: 50px;
+  }
+
+  h2 {
+    border-bottom: solid 3px $light-pink;
+    width: 20%;
+    text-align: right;
+    margin-bottom: 5%;
+    line-height: 40px;
+  }
+    }
+
+.step_contents {
+    border-style: solid;
+    border-color: $light-pink;
+    border-width: 3px;
+    padding: 2.5%;
+      h3 {
+        text-align: center;
+        color: black;
+        font-weight: bolder;
+      }
+
+      p {
+        text-align: center;
+        color: black;
+        font-size: 80%;
+        span {
+          font-size: 100%;
+
+        }
+      }
+    }

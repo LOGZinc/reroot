@@ -1,0 +1,30 @@
+.photos_space {
+  padding: 3%;
+  font-size: 30px;
+  color: $orange;
+
+
+  span {
+    color: $light-pink;
+    font-size: 50px;
+  }
+
+  h2 {
+    border-bottom: solid 3px $light-pink;
+    width: 20%;
+    text-align: right;
+    margin-bottom: 5%;
+    padding-right: 3%;
+  }
+    .photos_contents {
+      margin: 0px;
+      height: 100%;
+      border-bottom: solid;
+      border-top: solid;
+      border-color: $light-pink;
+      border-width: 3px;
+      padding:3%;
+
+      }
+  
+}
