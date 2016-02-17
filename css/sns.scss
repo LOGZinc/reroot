@@ -1,22 +1,32 @@
 .sns_space {
-  width: 100%;
-  font-size: 30px;
-  color: $orange;
-  padding: 3%;
+  padding: 5%;
 
-  span {
-    color: $light-pink;
-    font-size: 50px;
+  .initial {
+      font-size: 2.1em;
+      border-left: solid 3px $light-pink;
+      border-right: solid 3px $light-pink;
+      border-top: solid 3px $light-pink;
+      color: $light-pink;
   }
 
   h2 {
-    border-bottom: solid 3px $light-pink;
-    width: 20%;
-    text-align: right;
-    margin-bottom: 5%;
-    padding-right: 3%;
+      font-size: 1.5em;
+      border-bottom: solid 3px $light-pink;
+      width: 14%;
+      text-align: right;
+      margin-bottom: 5%;
+      line-height: 40px;
+      color: $orange;
   }
 
+  @media screen and (max-width: 768px){
+    h2 {
+      font-size: 1.5em;
+      width: 30%;
+      line-height: 150%;
+    }
+  }
+}
     .sns_contents {
       display: table;
       width: 100%;
@@ -41,4 +51,4 @@
               }
           }
       }
-  }
+  

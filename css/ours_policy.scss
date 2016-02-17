@@ -1,26 +1,45 @@
 .ours_policy_space {
-  font-size: 30px;
-  color: $orange;
-  padding: 3%;
+      padding: 5%;
 
-  span {
-    color: $light-pink;
-    font-size: 50px;
-  }
+      .initial {
+          color: $light-pink;
+          font-size: 2.1em;
+          border-left: solid 3px $light-pink;
+          border-right: solid 3px $light-pink;
+          border-top: solid 3px $light-pink;
+      }
 
-  h2 {
-    border-bottom: solid 3px $light-pink;
-    width: 20%;
-    text-align: right;
-    margin-bottom: 5%;
-  }
+      h2 {
+        border-bottom: solid 3px $light-pink;
+        width: 20.5%;
+        text-align: right;
+        color: $orange;
+        font-size: 1.5em;
+        line-height: 40px;
+        margin-bottom: 5%;
+      }
 
-    .ours_policy_contents {
+      @media screen and (max-width: 768px){
+          h2 {
+            font-size: 1.5em;
+            width: 40%;
+            line-height: 150%;
+          }
+      }
+}
+
+.ours_policy_contents {
       border-style: solid;
       border-color: $light-pink;
       border-width: 3px;
       padding: 2.5%;
-     
 
-      }
-  }
+     p {
+      color: black;
+      font-size: 1.2em;
+     }
+
+     @media screen and (max-width: 768px){
+
+    }
+}

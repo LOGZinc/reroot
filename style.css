@@ -288,23 +288,30 @@ footer #footer_bottom .booking_box li a {
 }
 
 .step_space {
-  font-size: 30px;
-  color: #f19319;
-  padding: 3%;
+  padding: 5%;
 }
 .step_space .initial {
+  color: #CC62A1;
+  font-size: 2.1em;
   border-left: solid 3px #CC62A1;
   border-right: solid 3px #CC62A1;
   border-top: solid 3px #CC62A1;
-  color: #CC62A1;
-  font-size: 50px;
 }
 .step_space h2 {
+  font-size: 1.5em;
   border-bottom: solid 3px #CC62A1;
-  width: 20%;
+  width: 21%;
   text-align: right;
   margin-bottom: 5%;
   line-height: 40px;
+  color: #f19319;
+}
+@media screen and (max-width: 768px) {
+  .step_space h2 {
+    font-size: 1.5em;
+    width: 40%;
+    line-height: 150%;
+  }
 }
 
 .step_contents {
@@ -313,44 +320,63 @@ footer #footer_bottom .booking_box li a {
   border-width: 3px;
   padding: 2.5%;
 }
+.step_contents p {
+  text-align: center;
+  font-size: 1.2em;
+}
 .step_contents h3 {
+  font-size: 2em;
   text-align: center;
   color: black;
   font-weight: bolder;
 }
-.step_contents p {
-  text-align: center;
-  color: black;
-  font-size: 80%;
-}
-.step_contents p span {
-  font-size: 100%;
+@media screen and (max-width: 768px) {
+  .step_contents h3 {
+    font-size: 1.5em;
+  }
+  .step_contents p {
+    font-size: 0.7em;
+  }
+  .step_contents .step_photos ul {
+    text-align: center;
+  }
 }
 
 .blog_space {
-  font-size: 30px;
-  color: #f19319;
-  padding: 3%;
+  padding: 5%;
 }
-.blog_space span {
+.blog_space .initial {
+  font-size: 2.1em;
+  border-left: solid 3px #CC62A1;
+  border-right: solid 3px #CC62A1;
+  border-top: solid 3px #CC62A1;
   color: #CC62A1;
-  font-size: 50px;
 }
 .blog_space h2 {
+  font-size: 1.5em;
   border-bottom: solid 3px #CC62A1;
-  width: 20%;
+  width: 18%;
   text-align: right;
   margin-bottom: 5%;
-  padding-right: 3%;
+  line-height: 40px;
+  color: #f19319;
 }
-.blog_space .blog_contents {
+@media screen and (max-width: 768px) {
+  .blog_space h2 {
+    font-size: 1.5em;
+    width: 35%;
+    line-height: 150%;
+  }
+}
+
+.blog_contents {
   height: 100%;
   border-style: solid;
   border-color: #CC62A1;
   border-width: 3px;
   padding: 2.5%;
 }
-.blog_space .blog_contents h3 {
+.blog_contents h3 {
   text-align: left;
   color: orange;
   padding-left: 5%;
@@ -359,71 +385,108 @@ footer #footer_bottom .booking_box li a {
 }
 
 .ours_policy_space {
-  font-size: 30px;
-  color: #f19319;
-  padding: 3%;
+  padding: 5%;
 }
-.ours_policy_space span {
+.ours_policy_space .initial {
   color: #CC62A1;
-  font-size: 50px;
+  font-size: 2.1em;
+  border-left: solid 3px #CC62A1;
+  border-right: solid 3px #CC62A1;
+  border-top: solid 3px #CC62A1;
 }
 .ours_policy_space h2 {
   border-bottom: solid 3px #CC62A1;
-  width: 20%;
+  width: 20.5%;
   text-align: right;
+  color: #f19319;
+  font-size: 1.5em;
+  line-height: 40px;
   margin-bottom: 5%;
 }
-.ours_policy_space .ours_policy_contents {
+@media screen and (max-width: 768px) {
+  .ours_policy_space h2 {
+    font-size: 1.5em;
+    width: 40%;
+    line-height: 150%;
+  }
+}
+
+.ours_policy_contents {
   border-style: solid;
   border-color: #CC62A1;
   border-width: 3px;
   padding: 2.5%;
 }
+.ours_policy_contents p {
+  color: black;
+  font-size: 1.2em;
+}
 
 .photos_space {
-  padding: 3%;
-  font-size: 30px;
-  color: #f19319;
+  padding: 5%;
 }
-.photos_space span {
+.photos_space .initial {
   color: #CC62A1;
-  font-size: 50px;
+  font-size: 2.1em;
+  border-left: solid 3px #CC62A1;
+  border-right: solid 3px #CC62A1;
+  border-top: solid 3px #CC62A1;
 }
 .photos_space h2 {
   border-bottom: solid 3px #CC62A1;
-  width: 20%;
+  width: 15%;
   text-align: right;
+  color: #f19319;
+  font-size: 1.5em;
+  line-height: 40px;
   margin-bottom: 5%;
-  padding-right: 3%;
 }
-.photos_space .photos_contents {
+@media screen and (max-width: 768px) {
+  .photos_space h2 {
+    font-size: 1.5em;
+    width: 31%;
+    line-height: 150%;
+  }
+}
+
+.photos_contents {
+  background-image: url("img/top_photo.jpg");
   margin: 0px;
   height: 100%;
   border-bottom: solid;
   border-top: solid;
   border-color: #CC62A1;
   border-width: 3px;
-  padding: 3%;
 }
 
 .sns_space {
-  width: 100%;
-  font-size: 30px;
-  color: #f19319;
-  padding: 3%;
+  padding: 5%;
 }
-.sns_space span {
+.sns_space .initial {
+  font-size: 2.1em;
+  border-left: solid 3px #CC62A1;
+  border-right: solid 3px #CC62A1;
+  border-top: solid 3px #CC62A1;
   color: #CC62A1;
-  font-size: 50px;
 }
 .sns_space h2 {
+  font-size: 1.5em;
   border-bottom: solid 3px #CC62A1;
-  width: 20%;
+  width: 14%;
   text-align: right;
   margin-bottom: 5%;
-  padding-right: 3%;
+  line-height: 40px;
+  color: #f19319;
 }
-.sns_space .sns_contents {
+@media screen and (max-width: 768px) {
+  .sns_space h2 {
+    font-size: 1.5em;
+    width: 30%;
+    line-height: 150%;
+  }
+}
+
+.sns_contents {
   display: table;
   width: 100%;
   border-style: solid;
@@ -431,18 +494,18 @@ footer #footer_bottom .booking_box li a {
   border-width: 3px;
   padding: 2.5%;
 }
-.sns_space .sns_contents .twitter,
-.sns_space .sns_contents .facebook {
+.sns_contents .twitter,
+.sns_contents .facebook {
   display: table-cell;
 }
 @media screen and (max-width: 768px) {
-  .sns_space .sns_contents .twitter,
-  .sns_space .sns_contents .facebook {
+  .sns_contents .twitter,
+  .sns_contents .facebook {
     display: block;
     width: 100%;
   }
-  .sns_space .sns_contents .twitter .twitter-timeline,
-  .sns_space .sns_contents .facebook .twitter-timeline {
+  .sns_contents .twitter .twitter-timeline,
+  .sns_contents .facebook .twitter-timeline {
     display: block !important;
     margin-left: auto;
     margin-right: auto;

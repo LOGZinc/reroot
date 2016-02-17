@@ -1,44 +1,62 @@
 .step_space {
-  font-size: 30px;
-  color: $orange;
-  padding: 3%;
+  padding: 5%;
 
-  .initial {
-    border-left: solid 3px $light-pink;
-    border-right: solid 3px $light-pink;
-    border-top: solid 3px $light-pink;
-    
-    color: $light-pink;
-    font-size: 50px;
-  }
+      .initial {
+          color: $light-pink;
+          font-size: 2.1em;
+          border-left: solid 3px $light-pink;
+          border-right: solid 3px $light-pink;
+          border-top: solid 3px $light-pink;
+      }
 
-  h2 {
-    border-bottom: solid 3px $light-pink;
-    width: 20%;
-    text-align: right;
-    margin-bottom: 5%;
-    line-height: 40px;
-  }
-    }
+      h2 {
+        font-size: 1.5em;
+        border-bottom: solid 3px $light-pink;
+        width: 21%;
+        text-align: right;
+        margin-bottom: 5%;
+        line-height: 40px;
+        color: $orange;
+      }
+
+      @media screen and (max-width: 768px){
+        h2 {
+          font-size: 1.5em;
+          width: 40%;
+          line-height: 150%;
+        }
+      }
+}
 
 .step_contents {
     border-style: solid;
     border-color: $light-pink;
     border-width: 3px;
     padding: 2.5%;
+      p{
+        text-align: center;
+        font-size: 1.2em;
+      }
       h3 {
+        font-size: 2em;
         text-align: center;
         color: black;
         font-weight: bolder;
       }
 
-      p {
-        text-align: center;
-        color: black;
-        font-size: 80%;
-        span {
-          font-size: 100%;
+       @media screen and (max-width: 768px){
 
+        h3 {
+          font-size: 1.5em;
+        }
+
+        p {
+          font-size: 0.7em;
+        }
+
+        .step_photos ul{
+          text-align: center;
         }
       }
-    }
+}
+
