@@ -64,7 +64,7 @@
 			width: 100%;
 		    height: 100%;
 
-		    @media screen and (max-width: 641px) {
+		    @media screen and (max-width: 639px) {
 			    li {
 			    	position: absolute;
 			        width: 100%;
@@ -112,7 +112,7 @@
 			//     }
 		 //    }
 			/*------------タブレット&PC------------*/
-			@media screen and (min-width: 641px) {
+			@media screen and (min-width: 640px) {
 			    li {
 			        width: 100%;
 		    	    height: 120px;
@@ -148,7 +148,7 @@
 		}
 	}
 
-	@media screen and (max-width: 641px) {
+	@media screen and (max-width: 639px) {
 		#carriculum_contents_menu {
 			position: absolute;
 		}
@@ -174,7 +174,7 @@
 		}
 	}
 
-	@media screen and (min-width: 641px) {
+	@media screen and (min-width: 640px) {
 		#carriculum_contents_block {
 			border-top: solid 1px $light-orange;
 			border-bottom: solid 1px $light-orange;
@@ -182,7 +182,7 @@
 		}
 	}
 
-	@media screen and (max-width: 640px) {
+	@media screen and (max-width: 639px) {
 		#carriculum_contents_block {
 			border-bottom: solid 3px $light-orange;
 			position: absolute;

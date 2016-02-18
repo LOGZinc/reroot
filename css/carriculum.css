@@ -310,7 +310,7 @@ footer {
       width: 100%;
       height: 100%;
       /*------------タブレット&PC------------*/ }
-      @media screen and (max-width: 641px) {
+      @media screen and (max-width: 639px) {
         #carriculum_contents #carriculum_contents_menu ul li {
           position: absolute;
           width: 100%;
@@ -327,7 +327,7 @@ footer {
           border-bottom: solid 1px #EDA966; }
         #carriculum_contents #carriculum_contents_menu ul .li_others {
           border-bottom: solid 1px #EDA966; } }
-      @media screen and (min-width: 641px) {
+      @media screen and (min-width: 640px) {
         #carriculum_contents #carriculum_contents_menu ul li {
           width: 100%;
           height: 120px;
@@ -350,7 +350,7 @@ footer {
         color: white; }
       #carriculum_contents #carriculum_contents_menu ul .hidding_content_menu {
         color: #777777; }
-  @media screen and (max-width: 641px) {
+  @media screen and (max-width: 639px) {
     #carriculum_contents #carriculum_contents_menu {
       position: absolute; } }
   #carriculum_contents #carriculum_contents_block {
@@ -365,12 +365,12 @@ footer {
       display: block !important; }
     #carriculum_contents #carriculum_contents_block .content_hidden {
       display: none; }
-  @media screen and (min-width: 641px) {
+  @media screen and (min-width: 640px) {
     #carriculum_contents #carriculum_contents_block {
       border-top: solid 1px #EDA966;
       border-bottom: solid 1px #EDA966;
       height: 600px; } }
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: 639px) {
     #carriculum_contents #carriculum_contents_block {
       border-bottom: solid 3px #EDA966;
       position: absolute; } }
