@@ -48,6 +48,7 @@ html a {
   background: rgba(255, 255, 255, 0.9);
   position: fixed;
   top: 0;
+  z-index: 5;
   padding: 1rem 0px;
   /*padding-left: 80px;*/
   /*border-bottom: 1px solid #545454;*/ }
@@ -260,7 +261,7 @@ footer {
 /*装飾*/
 /*画像*/
 #main {
-  height: 2000px; }
+  height: 3000px; }
 
 #top_title {
   height: 90px;
@@ -297,51 +298,99 @@ footer {
     width: 100%; }
 
 #carriculum_contents {
+  position: relative;
   width: 100%;
-  height: 600px; }
+  height: 900px;
+  max-width: 2000px !important;
+  margin: 0 !important; }
   #carriculum_contents #carriculum_contents_menu {
-    width: 200px;
     height: 100%;
     float: left; }
     #carriculum_contents #carriculum_contents_menu ul {
       width: 100%;
-      height: 100%; }
-      #carriculum_contents #carriculum_contents_menu ul li {
-        width: 100%;
-        height: 120px;
-        font-size: 20px;
-        font-weight: 600;
-        list-style: none;
-        text-align: center;
-        line-height: 120px;
-        box-sizing: border-box;
-        cursor: pointer; }
-      #carriculum_contents #carriculum_contents_menu ul .li_top {
-        border-top: solid 1px #EDA966;
-        border-bottom: solid 1px #EDA966;
-        border-right: solid 4px #EDA966; }
-      #carriculum_contents #carriculum_contents_menu ul .li_others {
-        border-bottom: solid 1px #EDA966;
-        border-right: solid 4px #EDA966; }
+      height: 100%;
+      /*------------タブレット------------*/
+      /*------------PC------------*/ }
+      @media screen and (max-width: 480px) {
+        #carriculum_contents #carriculum_contents_menu ul li {
+          position: absolute;
+          width: 100%;
+          height: 80px;
+          font-size: 20px;
+          font-weight: 600;
+          list-style: none;
+          text-align: center;
+          line-height: 80px;
+          box-sizing: border-box;
+          cursor: pointer; }
+        #carriculum_contents #carriculum_contents_menu ul .li_top {
+          border-top: solid 1px #EDA966;
+          border-bottom: solid 1px #EDA966; }
+        #carriculum_contents #carriculum_contents_menu ul .li_others {
+          border-bottom: solid 1px #EDA966; } }
+      @media screen and (min-width: 481px) and (max-width: 768px) {
+        #carriculum_contents #carriculum_contents_menu ul li {
+          position: absolute;
+          width: 100%;
+          height: 80px;
+          font-size: 20px;
+          font-weight: 600;
+          list-style: none;
+          text-align: center;
+          line-height: 80px;
+          box-sizing: border-box;
+          cursor: pointer; }
+        #carriculum_contents #carriculum_contents_menu ul .li_top {
+          border-top: solid 1px #EDA966;
+          border-bottom: solid 1px #EDA966; }
+        #carriculum_contents #carriculum_contents_menu ul .li_others {
+          border-bottom: solid 1px #EDA966; } }
+      @media screen and (min-width: 769px) {
+        #carriculum_contents #carriculum_contents_menu ul li {
+          width: 100%;
+          height: 120px;
+          font-size: 20px;
+          font-weight: 600;
+          list-style: none;
+          text-align: center;
+          line-height: 120px;
+          box-sizing: border-box;
+          cursor: pointer; }
+        #carriculum_contents #carriculum_contents_menu ul .li_top {
+          border-top: solid 1px #EDA966;
+          border-bottom: solid 1px #EDA966;
+          border-right: solid 4px #EDA966; }
+        #carriculum_contents #carriculum_contents_menu ul .li_others {
+          border-bottom: solid 1px #EDA966;
+          border-right: solid 4px #EDA966; } }
       #carriculum_contents #carriculum_contents_menu ul .showing_content_menu {
         background-color: #EDA966;
         color: white; }
       #carriculum_contents #carriculum_contents_menu ul .hidding_content_menu {
         color: #777777; }
+  @media screen and (max-width: 768px) {
+    #carriculum_contents #carriculum_contents_menu {
+      position: absolute; } }
   #carriculum_contents #carriculum_contents_block {
-    width: calc(100% - 200px);
-    height: 600px;
+    height: 500px;
     float: left;
-    border-top: solid 1px #EDA966;
-    border-bottom: solid 1px #EDA966;
     box-sizing: border-box; }
     #carriculum_contents #carriculum_contents_block .carriculum_content {
       width: calc(100% - 40px);
-      height: 560px;
+      height: 460px;
       margin: 20px; }
     #carriculum_contents #carriculum_contents_block .content_show {
       display: block !important; }
     #carriculum_contents #carriculum_contents_block .content_hidden {
       display: none; }
+  @media screen and (min-width: 769px) {
+    #carriculum_contents #carriculum_contents_block {
+      border-top: solid 1px #EDA966;
+      border-bottom: solid 1px #EDA966;
+      height: 600px; } }
+  @media screen and (max-width: 768px) {
+    #carriculum_contents #carriculum_contents_block {
+      border-bottom: solid 3px #EDA966;
+      position: absolute; } }
 
 /*# sourceMappingURL=carriculum.css.map */

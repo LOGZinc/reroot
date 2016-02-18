@@ -159,8 +159,8 @@ fsdagdasadsgdsa
 	<img src="img/step_large.png">
 </div>
 
-<div id="carriculum_contents">
-	<div id="carriculum_contents_menu">
+<div id="carriculum_contents" class="row small-collapse medium-collapse large-collapse">
+	<div id="carriculum_contents_menu" class="columns small-12 medium-3 large-3">
 		<ul>
 			<li class="li_top showing_content_menu">reroot</li>
 			<li class="li_others hidding_content_menu">面談</li>
@@ -169,21 +169,21 @@ fsdagdasadsgdsa
 			<li class="li_others hidding_content_menu">カウンセリング</li>
 		</ul>
 	</div>
-	<div id="carriculum_contents_block">
+	<div id="carriculum_contents_block" class="columns small-12 medium-9 large-9">
 		<div class="carriculum_content content_show">
-			<h1 style="text-align:center; line-height:560px; font-size:40px;">ページ1</h1>
+			<h1 style="text-align:center; line-height:460px; font-size:40px;">ページ1</h1>
 		</div>
 		<div class="carriculum_content content_hidden">
-			<h1 style="text-align:center; line-height:560px; font-size:40px;">ページ2</h1>
+			<h1 style="text-align:center; line-height:460px; font-size:40px;">ページ2</h1>
 		</div>
 		<div class="carriculum_content content_hidden">
-			<h1 style="text-align:center; line-height:560px; font-size:40px;">ページ3</h1>
+			<h1 style="text-align:center; line-height:460px; font-size:40px;">ページ3</h1>
 		</div>
 		<div class="carriculum_content content_hidden">
-			<h1 style="text-align:center; line-height:560px; font-size:40px;">ページ4</h1>
+			<h1 style="text-align:center; line-height:460px; font-size:40px;">ページ4</h1>
 		</div>
 		<div class="carriculum_content content_hidden">
-			<h1 style="text-align:center; line-height:560px; font-size:40px;">ページ5</h1>
+			<h1 style="text-align:center; line-height:460px; font-size:40px;">ページ5</h1>
 		</div>
 	</div>
 </div>
@@ -297,11 +297,30 @@ fsdagdasadsgdsa
   		$(this).removeClass('hidding_content_menu');
 
         //クリックされたメニューのインデックス番号を取得し、その番号のコンテンツの表示、表示しているコンテンツを非表示に。
-  		var i = $("#carriculum_contents_menu li").index(this);
+  		var n = $("#carriculum_contents_menu li").index(this);
   		$(".carriculum_content").removeClass('content_show');
   		$(".carriculum_content").addClass('content_hidden');
-  		$(".carriculum_content").eq(i).addClass('content_show');
+  		$(".carriculum_content").eq(n).addClass('content_show');
+
+  		//スマホ時のアコーディオン処理
+  		for (var i = 0; i <= n; i++) {
+  			var menu_height = String(i * 80) + "px";
+  			$("#carriculum_contents_menu ul li").eq(i).css('top', menu_height);
+  		};
+  		for (var i = n + 1; i <= 4; i++) {
+  			var menu_height = String(i * 80 + 500) + "px";
+  			$("#carriculum_contents_menu ul li").eq(i).css('top', menu_height);
+  		};
+  		$("#carriculum_contents_block").css('top', String((n + 1) * 80) + "px");
   	});
+
+  	//スマホ時のアコーディオン処理（初期値）
+  	$("#carriculum_contents_menu ul li").eq(0).css('top', '0');
+  	$("#carriculum_contents_menu ul li").eq(1).css('top', '580px');
+  	$("#carriculum_contents_menu ul li").eq(2).css('top', '660px');
+  	$("#carriculum_contents_menu ul li").eq(3).css('top', '740px');
+  	$("#carriculum_contents_menu ul li").eq(4).css('top', '820px');
+  	$("#carriculum_contents_block").css('top', '80px');
   });
 </script>
 </body>

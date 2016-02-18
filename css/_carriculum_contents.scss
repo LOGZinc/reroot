@@ -1,14 +1,14 @@
 @import "variables";
 
 #main {
-	height: 2000px;
+	height: 3000px;
 }
 
 #top_title {
 	height: 90px;
 	width: 450px;
 	margin: 100px 0 0 50px;
-	border-bottom: solid 5px #EDA966;
+	border-bottom: solid 5px $light-orange;
 
 	img{
 		width: 60px;
@@ -51,43 +51,94 @@
 }
 
 #carriculum_contents {
+	position:relative;
 	width: 100%;
-	height: 600px;
+	height: 900px;
+	max-width: 2000px !important;
+	margin: 0 !important;
 
 	#carriculum_contents_menu {
-		width: 200px;
 		height: 100%;
 		float: left;
-
 		ul {
 			width: 100%;
 		    height: 100%;
 
-		    li {
-		    	width: 100%;
-		    	height: 120px;
-		    	font-size: 20px;
-		    	font-weight: 600;
-		    	list-style: none;
-		    	text-align: center;
-		    	line-height: 120px;
-		    	box-sizing: border-box;
-		    	cursor: pointer;
-		    }
+		    @media screen and (max-width: 480px) {
+			    li {
+			    	position: absolute;
+			        width: 100%;
+		    	    height: 80px;
+		    	    font-size: 20px;
+		    	    font-weight: 600;
+		    	    list-style: none;
+		    	    text-align: center;
+		    	    line-height: 80px;
+		    	    box-sizing: border-box;
+		    	    cursor: pointer;
+		    	}
 
-		    .li_top {
-		    	border-top: solid 1px #EDA966;
-		    	border-bottom: solid 1px #EDA966;
-		    	border-right: solid 4px #EDA966;
-		    }
+		    	.li_top {
+			    	border-top: solid 1px $light-orange;
+			    	border-bottom: solid 1px $light-orange;
+			    }
 
-		    .li_others {
-		    	border-bottom: solid 1px #EDA966;
-		    	border-right: solid 4px #EDA966;
+			    .li_others {
+			    	border-bottom: solid 1px $light-orange;
+			    }
+		    }
+			/*------------タブレット------------*/
+			@media screen and (min-width: 481px) and (max-width: 768px) {
+			    li {
+			    	position: absolute;
+			        width: 100%;
+		    	    height: 80px;
+		    	    font-size: 20px;
+		    	    font-weight: 600;
+		    	    list-style: none;
+		    	    text-align: center;
+		    	    line-height: 80px;
+		    	    box-sizing: border-box;
+		    	    cursor: pointer;
+		    	}
+
+		    	.li_top {
+			    	border-top: solid 1px $light-orange;
+			    	border-bottom: solid 1px $light-orange;
+			    }
+
+			    .li_others {
+			    	border-bottom: solid 1px $light-orange;
+			    }
+		    }
+			/*------------PC------------*/
+			@media screen and (min-width: 769px) {
+			    li {
+			        width: 100%;
+		    	    height: 120px;
+		    	    font-size: 20px;
+		    	    font-weight: 600;
+		    	    list-style: none;
+		    	    text-align: center;
+		    	    line-height: 120px;
+		    	    box-sizing: border-box;
+		    	    cursor: pointer;
+		        }
+
+		        .li_top {
+			    	border-top: solid 1px $light-orange;
+			    	border-bottom: solid 1px $light-orange;
+			    	border-right: solid 4px $light-orange;
+			    }
+
+			    .li_others {
+			    	border-bottom: solid 1px $light-orange;
+			    	border-right: solid 4px $light-orange;
+			    }
 		    }
 
 		    .showing_content_menu {
-		    	background-color: #EDA966;
+		    	background-color: $light-orange;
 		    	color: white;
 		    }
 
@@ -97,17 +148,20 @@
 		}
 	}
 
+	@media screen and (max-width: 768px) {
+		#carriculum_contents_menu {
+			position: absolute;
+		}
+	}
+
 	#carriculum_contents_block {
-		width: calc(100% - 200px);
-		height: 600px;
+		height: 500px;
 		float: left;
-		border-top: solid 1px #EDA966;
-		border-bottom: solid 1px #EDA966;
 		box-sizing: border-box;
 
 		.carriculum_content {
 			width: calc(100% - 40px);
-			height: 560px;
+			height: 460px;
 			margin: 20px;
 		}
 
@@ -117,6 +171,21 @@
 
 		.content_hidden {
 			display: none;
+		}
+	}
+
+	@media screen and (min-width: 769px) {
+		#carriculum_contents_block {
+			border-top: solid 1px $light-orange;
+			border-bottom: solid 1px $light-orange;
+			height: 600px;
+		}
+	}
+
+	@media screen and (max-width: 768px) {
+		#carriculum_contents_block {
+			border-bottom: solid 3px $light-orange;
+			position: absolute;
 		}
 	}
 }
