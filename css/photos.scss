@@ -1,30 +1,39 @@
 .photos_space {
-  padding: 3%;
-  font-size: 30px;
-  color: $orange;
+   padding: 5%;
 
+      .initial {
+          color: $light-pink;
+          font-size: 2.1em;
+          border-left: solid 3px $light-pink;
+          border-right: solid 3px $light-pink;
+          border-top: solid 3px $light-pink;
+      }
 
-  span {
-    color: $light-pink;
-    font-size: 50px;
-  }
+      h2 {
+        border-bottom: solid 3px $light-pink;
+        width: 15%;
+        text-align: right;
+        color: $orange;
+        font-size: 1.5em;
+        line-height: 40px;
+        margin-bottom: 5%;
+      }
 
-  h2 {
-    border-bottom: solid 3px $light-pink;
-    width: 20%;
-    text-align: right;
-    margin-bottom: 5%;
-    padding-right: 3%;
+      @media screen and (max-width: 768px){
+          h2 {
+            font-size: 1.5em;
+            width: 31%;
+            line-height: 150%;
+          }
+      }
   }
     .photos_contents {
+      background-image: url("img/top_photo.jpg");
       margin: 0px;
       height: 100%;
       border-bottom: solid;
       border-top: solid;
       border-color: $light-pink;
       border-width: 3px;
-      padding:3%;
-
       }
-  
-}
+
