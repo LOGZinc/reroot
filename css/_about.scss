@@ -1,0 +1,53 @@
+@import "variables";
+@import "btn";
+#about_main{
+  margin :75px 0 75px 50px;
+  font-size: 1.5rem;
+  @media screen and (max-width: 768px){
+    margin :50px 0 50px 25px;
+    font-size: 1.5rem;
+  }
+  @media screen and (max-width: 480px){
+    margin: 0;
+    margin-top: 12.5px;
+    font-size: 14px;
+  }
+  .about_title{
+    height: 90px;
+    @media screen and (max-width: 768px){
+      height: 45px;
+    }
+    @media screen and (max-width: 480px){
+      margin: 0 auto;
+      width: 180px;
+    }
+    .about_title-name{
+      color: #4C4C4C;
+      font-size: 65px;
+      line-height: 90px;
+      font-weight: 800;
+      float: left;
+      border-bottom: solid 5px $orange;
+      @media screen and (max-width: 768px){
+        font-size: 2.5rem;
+        line-height: 35px;
+      }
+    }
+  }
+  .about_contents{
+    margin-top: 50px;
+    width: 95%;
+    @media screen and (max-width: 768px){
+      margin: 0 auto;
+      margin-top: 20px;
+      width: 100%;
+      padding-right: 25px;
+    }
+    @media screen and (max-width: 480px){
+      margin: 0 auto;
+      margin-top: 25px;
+      padding: 0;
+      width: 90%;
+    }
+  }
+}
