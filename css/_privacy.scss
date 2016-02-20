@@ -1,0 +1,31 @@
+@import "variables";
+@import "about";
+#privacy_main{
+  @extend #about_main;
+  .privacy_title{
+    @extend .about_title;
+    @media screen and (max-width: 480px){
+      width: 240px;
+    }
+    .privacy_title-name{
+      @extend .about_title-name;
+    }
+  }
+  .privacy_contents-all{
+    @extend .about_contents;
+    padding-bottom: 25px;
+    @media screen and (max-width: 480px){
+      padding-bottom: 5px;
+    }
+    .privacy_contents_title{
+      font-weight: bold;
+      font-size: 1.6rem;
+    }
+    .privacy_contents{
+      margin-top: 25px;
+      @media screen and (max-width: 480px){
+        margin: 10px;
+      }
+    }
+  }
+}

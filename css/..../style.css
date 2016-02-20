@@ -432,28 +432,28 @@ footer {
 /*【黒】コンテンツ文字部分*/
 /*装飾*/
 /*画像*/
-#about_main, #privacy_main {
+#about_main {
   margin: 75px 0 75px 50px;
   font-size: 1.5rem; }
   @media screen and (max-width: 768px) {
-    #about_main, #privacy_main {
+    #about_main {
       margin: 50px 0 50px 25px;
       font-size: 1.5rem; } }
   @media screen and (max-width: 480px) {
-    #about_main, #privacy_main {
+    #about_main {
       margin: 0;
       margin-top: 12.5px;
       font-size: 14px; } }
-  #about_main .about_title, #privacy_main .about_title, #privacy_main .privacy_title {
+  #about_main .about_title {
     height: 90px; }
     @media screen and (max-width: 768px) {
-      #about_main .about_title, #privacy_main .about_title, #privacy_main .privacy_title {
+      #about_main .about_title {
         height: 45px; } }
     @media screen and (max-width: 480px) {
-      #about_main .about_title, #privacy_main .about_title, #privacy_main .privacy_title {
+      #about_main .about_title {
         margin: 0 auto;
         width: 180px; } }
-    #about_main .about_title .about_title-name, #privacy_main .about_title .about_title-name, #privacy_main .privacy_title .about_title-name, #privacy_main .privacy_title .privacy_title-name {
+    #about_main .about_title .about_title-name {
       color: #4C4C4C;
       font-size: 65px;
       line-height: 90px;
@@ -461,109 +461,27 @@ footer {
       float: left;
       border-bottom: solid 5px #f19319; }
       @media screen and (max-width: 768px) {
-        #about_main .about_title .about_title-name, #privacy_main .about_title .about_title-name, #privacy_main .privacy_title .about_title-name, #privacy_main .privacy_title .privacy_title-name {
+        #about_main .about_title .about_title-name {
           font-size: 2.5rem;
           line-height: 35px; } }
-  #about_main .about_contents, #privacy_main .about_contents, #privacy_main .privacy_contents-all {
+  #about_main .about_contents {
     margin-top: 50px;
     width: 95%; }
     @media screen and (max-width: 768px) {
-      #about_main .about_contents, #privacy_main .about_contents, #privacy_main .privacy_contents-all {
+      #about_main .about_contents {
         margin: 0 auto;
         margin-top: 20px;
         width: 100%;
         padding-right: 25px; } }
     @media screen and (max-width: 480px) {
-      #about_main .about_contents, #privacy_main .about_contents, #privacy_main .privacy_contents-all {
+      #about_main .about_contents {
         margin: 0 auto;
         margin-top: 25px;
         padding: 0;
         width: 90%; } }
 
-/*文字*/
-/*色*/
-/*【オレンジ】header・footer部分*/
-/*【薄いオレンジ】contents部分*/
-/*【ピンク】header・footer部分*/
-/*【薄いピンク】contents部分*/
-/*【紺】リンクテキスト部分*/
-/*【黒】コンテンツ文字部分*/
-/*装飾*/
-/*画像*/
-/*文字*/
-/*色*/
-/*【オレンジ】header・footer部分*/
-/*【薄いオレンジ】contents部分*/
-/*【ピンク】header・footer部分*/
-/*【薄いピンク】contents部分*/
-/*【紺】リンクテキスト部分*/
-/*【黒】コンテンツ文字部分*/
-/*装飾*/
-/*画像*/
-#about_main, #privacy_main {
-  margin: 75px 0 75px 50px;
-  font-size: 1.5rem; }
-  @media screen and (max-width: 768px) {
-    #about_main, #privacy_main {
-      margin: 50px 0 50px 25px;
-      font-size: 1.5rem; } }
-  @media screen and (max-width: 480px) {
-    #about_main, #privacy_main {
-      margin: 0;
-      margin-top: 12.5px;
-      font-size: 14px; } }
-  #about_main .about_title, #privacy_main .about_title, #privacy_main .privacy_title {
-    height: 90px; }
-    @media screen and (max-width: 768px) {
-      #about_main .about_title, #privacy_main .about_title, #privacy_main .privacy_title {
-        height: 45px; } }
-    @media screen and (max-width: 480px) {
-      #about_main .about_title, #privacy_main .about_title, #privacy_main .privacy_title {
-        margin: 0 auto;
-        width: 180px; } }
-    #about_main .about_title .about_title-name, #privacy_main .about_title .about_title-name, #privacy_main .privacy_title .about_title-name, #privacy_main .privacy_title .privacy_title-name {
-      color: #4C4C4C;
-      font-size: 65px;
-      line-height: 90px;
-      font-weight: 800;
-      float: left;
-      border-bottom: solid 5px #f19319; }
-      @media screen and (max-width: 768px) {
-        #about_main .about_title .about_title-name, #privacy_main .about_title .about_title-name, #privacy_main .privacy_title .about_title-name, #privacy_main .privacy_title .privacy_title-name {
-          font-size: 2.5rem;
-          line-height: 35px; } }
-  #about_main .about_contents, #privacy_main .about_contents, #privacy_main .privacy_contents-all {
-    margin-top: 50px;
-    width: 95%; }
-    @media screen and (max-width: 768px) {
-      #about_main .about_contents, #privacy_main .about_contents, #privacy_main .privacy_contents-all {
-        margin: 0 auto;
-        margin-top: 20px;
-        width: 100%;
-        padding-right: 25px; } }
-    @media screen and (max-width: 480px) {
-      #about_main .about_contents, #privacy_main .about_contents, #privacy_main .privacy_contents-all {
-        margin: 0 auto;
-        margin-top: 25px;
-        padding: 0;
-        width: 90%; } }
-
-@media screen and (max-width: 480px) {
-  #privacy_main .privacy_title {
-    width: 240px; } }
-#privacy_main .privacy_contents-all {
-  padding-bottom: 25px; }
-  @media screen and (max-width: 480px) {
-    #privacy_main .privacy_contents-all {
-      padding-bottom: 5px; } }
-  #privacy_main .privacy_contents-all .privacy_contents_title {
-    font-weight: bold;
-    font-size: 1.6rem; }
-  #privacy_main .privacy_contents-all .privacy_contents {
-    margin-top: 25px; }
-    @media screen and (max-width: 480px) {
-      #privacy_main .privacy_contents-all .privacy_contents {
-        margin: 10px; } }
+#privacy_main {
+  background-color: #000; }
 
 /*extend
 @import "extend";
