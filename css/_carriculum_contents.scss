@@ -27,6 +27,31 @@
 	}
 }
 
+@media screen and (max-width: 639px) {
+	#top_title {
+		height: 45px;
+		width: 250px;
+		margin: 100px 0 0 10px;
+		border-bottom: solid 3px $light-orange;
+
+		img{
+			width: 30px;
+			height: 30px;
+			margin-top: 3px;
+			margin-bottom: 12px;
+			float: left;
+		}
+
+		h1 {
+			color: #4C4C4C;
+			font-size: 35px;
+			line-height: 45px;
+			font-weight: 800;
+			float: left;
+		}
+    }
+}
+
 #carriculum_step {
 	width: 1000px;
 	height: 700px;
