@@ -1,0 +1,133 @@
+.main{
+	padding: 5% 0%;
+
+	.contact_box{
+	margin: 0 auto;
+	padding: 5%;
+	border: 1px solid $bd-gray;
+	border-radius: 5px;
+	box-shadow: 0px 1px 7px #e4e4e4;
+
+	h1{
+		font-size: 1.5rem;
+		padding: 0px 0px 0px 10px;
+		margin-bottom: 5%;
+		border-left: 3px solid $orange;
+		color: $orange;
+		font-weight: bold;
+	}
+
+	p{
+		font-size: 0.8rem;
+		color: #545454;
+		margin-bottom: 30px;
+		padding: 0px 0px 10px 0px;
+		border-bottom: 1px solid $bd-gray;
+		line-height: 1.8;
+	}
+
+	label{
+		font-size: 1.2rem;
+		color: #545454;
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	.contact_mast_mark{
+		background-color: $orange;
+		padding: 1px 5px;
+		color: #fff;
+		border-radius: 5px;
+		font-size: 0.5rem;
+		display: inline-block;
+		margin: 0px 0px 5px 10px;
+		vertical-align: middle;
+
+	}
+
+	input,select,option,textarea{
+		width: 100%;
+		margin: 0;
+		padding: 0 0 0 0;
+		background: none;
+		border: none;
+		border-radius: 0;
+		outline: none;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+		border: 1px solid $bd-gray;
+		color: #545454;
+		line-height: 2.0;
+
+		&:focus{
+			border: 2px solid rgba($orange,.6);
+		}
+	}
+
+	.contact_textarea{
+		margin-bottom: 4%;
+		color: #545454;
+	}
+
+	.contact_btn{
+		background: rgba($orange,1);
+		border: 2px solid rgba($orange,1);
+		color: #fff;
+		font-weight: bold;
+		padding: 1.5%;
+		transition: all 0.8s;
+		border-radius: 5px;
+
+		&:hover{
+			background: rgba(#fff,1);
+			color: $orange;
+		}
+
+	}
+}
+}
+
+table{
+  border-collapse:collapse;
+  border:none;
+  border-spacing:0;
+  border-spacing: 0px;
+  background-color: #fff;
+  width: 100%;
+}
+th{
+	width: 30%;
+}
+th,td{
+  vertical-align:top;
+  font-weight:normal;
+  text-align:left;
+}
+caption{
+  text-align:left;
+}
+
+/*------------スマホ------------*/
+@media screen and (max-width:480px){
+
+	.contact_box{
+		width: 100%;
+	}
+
+}
+/*------------タブレット------------*/
+@media screen and (min-width:481px) and (max-width:768px){
+
+	.contact_box{
+		width: 80%;
+	}
+}
+
+/*------------PC------------*/
+@media screen and (min-width:769px){
+
+	.contact_box{
+		width: 60%;
+	}
+}
