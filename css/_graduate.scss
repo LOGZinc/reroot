@@ -1,0 +1,93 @@
+/*============================
+  卒業生の声の部分
+=============================*/
+
+
+@import "variables";
+
+#graduate{
+  .guraduate_header{
+
+    color:$pink;
+    font-size:30px;
+    padding:50px 0 20px 120px;
+    @media screen and(max-width:1023px){
+      padding:50px 0 20px 90px;
+    }
+    @media screen and(max-width:639px){
+      padding:50px 0 20px 60px;
+    }
+  }
+  .border_1{
+    border:1px solid $orange;
+  }
+}
+
+.hidden-row{
+  max-width: none;
+  .main_contents{
+  width:1240px;
+  margin: 0 auto;
+  padding-top:40px;
+  @media screen and (max-width: 1023px){
+    width:740px;
+    margin-bottom:10px;
+  }
+  @media screen and (max-width: 639px){
+    width:320px;
+  }
+  .picture{
+    // width:270px;
+    height:250px;
+    margin:0 auto;
+    overflow: hidden;
+    padding-top:20px;
+    .pic{
+      width:100%;
+      height:auto;
+      min-height: 250px;
+    }
+  }
+  .contents1{
+    display: inline;
+    height:400px;
+    transition:background .8s ease-out;
+    margin-bottom:10px;
+
+
+    &:nth-child(odd){
+      background-color:rgba(255,129,25,0.6);
+
+    }
+    &:nth-child(even){
+      background-color:rgba(255,0,119,0.6);
+    }
+
+    &:hover{
+    background-color:rgba(109,247,156,0.3);
+    transition:background .3s ease-in;
+    }
+    a{
+      text-decoration: none;
+    }
+    .contents2{
+      padding:8px 35px;
+      height:129px;
+      overflow: hidden;
+      color:black;
+      h2{
+        margin:15px 0;
+        font-size: 20px;
+      }
+      p{
+        font-size: 13px;
+      }
+    }
+  }
+
+}
+}
+
+
+
+
