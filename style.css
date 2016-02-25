@@ -56,6 +56,7 @@ html a {
   background: rgba(255, 255, 255, 0.9);
   position: fixed;
   top: 0;
+  z-index: 5;
   padding: 1rem 0px;
   /*padding-left: 80px;*/
   /*border-bottom: 1px solid #545454;*/
@@ -446,6 +447,184 @@ footer #footer_bottom .booking_box li a {
     display: block !important;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+/*文字*/
+/*色*/
+/*【オレンジ】header・footer部分*/
+/*【薄いオレンジ】contents部分*/
+/*【ピンク】header・footer部分*/
+/*【薄いピンク】contents部分*/
+/*【紺】リンクテキスト部分*/
+/*【黒】コンテンツ文字部分*/
+/*装飾*/
+/*画像*/
+#graduate_detail {
+  width: 100%;
+}
+#graduate_detail .graduate_detail_header_top {
+  width: 800px;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-left: 30px;
+  border: 3px solid #bcbdc2;
+  box-shadow: 3px 5px 5px 1px #bcbdc2;
+}
+@media screen and (max-width: 1023px) {
+  #graduate_detail .graduate_detail_header_top {
+    width: 600px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 639px) {
+  #graduate_detail .graduate_detail_header_top {
+    width: 350px;
+    margin: 0 auto;
+  }
+}
+#graduate_detail .graduate_detail_header_top .heading {
+  width: 470px;
+  font-size: 34px;
+  text-align: center;
+  padding-top: 30px;
+  border-bottom: 1px dotted #CC62A1;
+  color: #EDA966;
+  font-weight: bold;
+}
+@media screen and (max-width: 1023px) {
+  #graduate_detail .graduate_detail_header_top .heading {
+    width: 420px;
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 639px) {
+  #graduate_detail .graduate_detail_header_top .heading {
+    width: 350px;
+    font-size: 24px;
+    text-align: left;
+  }
+}
+#graduate_detail .graduate_detail_header_top .top_image {
+  width: 600px;
+  height: 400px;
+  overflow: hidden;
+  padding-top: 50px;
+}
+@media screen and (max-width: 1023px) {
+  #graduate_detail .graduate_detail_header_top .top_image {
+    width: 480px;
+    height: 300px;
+  }
+}
+@media screen and (max-width: 639px) {
+  #graduate_detail .graduate_detail_header_top .top_image {
+    width: 320px;
+    height: 200px;
+  }
+}
+#graduate_detail .graduate_detail_header_top .top_image .top_photo {
+  width: 100%;
+  height: auto;
+}
+#graduate_detail .graduate_detail_header_top .introduce {
+  font-size: 18px;
+  margin: 30px 0 0 0;
+  letter-spacing: .5px;
+  width: 700px;
+}
+@media screen and (max-width: 1023px) {
+  #graduate_detail .graduate_detail_header_top .introduce {
+    width: 500px;
+  }
+}
+@media screen and (max-width: 639px) {
+  #graduate_detail .graduate_detail_header_top .introduce {
+    width: 300px;
+  }
+}
+#graduate_detail .graduate_detail_header_top .introduce .name {
+  font-size: 30px;
+}
+#graduate_detail .graduate_detail_header_top .introduce .name span {
+  font-size: 14px;
+}
+@media screen and (max-width: 1023px) {
+  #graduate_detail .graduate_detail_header_top .introduce .name {
+    font-size: 28px;
+  }
+  #graduate_detail .graduate_detail_header_top .introduce .name span {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 639px) {
+  #graduate_detail .graduate_detail_header_top .introduce .name {
+    font-size: 26px;
+  }
+}
+#graduate_detail .graduate_detail_header_top .introduce .ttl {
+  font-size: 14px;
+}
+@media screen and (max-width: 1023px) {
+  #graduate_detail .graduate_detail_header_top .introduce .ttl {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 639px) {
+  #graduate_detail .graduate_detail_header_top .introduce .ttl {
+    font-size: 12px;
+  }
+}
+#graduate_detail .graduate_detail_header_top .introduce .place {
+  font-size: 16px;
+}
+@media screen and (max-width: 1023px) {
+  #graduate_detail .graduate_detail_header_top .introduce .place {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 639px) {
+  #graduate_detail .graduate_detail_header_top .introduce .place {
+    font-size: 14px;
+  }
+}
+#graduate_detail .graduate_detail_header_top h2 {
+  border-left: 3px solid #CC62A1;
+  margin: 20px 0;
+  font-size: 24px;
+  padding-left: 5px;
+  color: #EDA966;
+  font-weight: bold;
+}
+@media screen and (max-width: 1023px) {
+  #graduate_detail .graduate_detail_header_top h2 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 639px) {
+  #graduate_detail .graduate_detail_header_top h2 {
+    font-size: 16px;
+  }
+}
+#graduate_detail .graduate_detail_header_top .paragraph {
+  margin-bottom: 50px;
+  font-size: 14px;
+  color: #333333;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #CC62A1;
+}
+#graduate_detail .graduate_detail_header_top .paragraph:last-child {
+  border-bottom: none;
+}
+@media screen and (max-width: 1023px) {
+  #graduate_detail .graduate_detail_header_top .paragraph {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 639px) {
+  #graduate_detail .graduate_detail_header_top .paragraph {
+    font-size: 10px;
   }
 }
 
