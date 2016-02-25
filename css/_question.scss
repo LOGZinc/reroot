@@ -1,0 +1,160 @@
+/*============================
+  よくある質問の部分
+=============================*/
+
+@import "variables";
+
+#top{
+  height:2000px;
+  width:100%;
+  .article{
+
+    .article_h1{
+      width:30%;
+      font-size:45px;
+      margin-top:50px;
+      margin-left:100px;
+      text-align:center;
+      @media screen and(max-width:900px){
+        font-size:25px;
+        margin-left:50px;
+      }
+      @media screen and(max-width:640px){
+        font-size:16px;
+        margin-left:50px;
+      }
+
+
+    }
+    .border_h1{
+       border-bottom:5px solid $orange;
+       margin-top:20px;
+       margin-left:75px;
+       width:32%;
+       @media screen and(max-width:900px){
+        width:40%;
+        border-bottom:4px solid $orange;
+        margin-left:10px;
+      }
+       @media screen and(max-width:640px){
+        width:40%;
+        border-bottom:3px solid $orange;
+        margin-left:20px;
+       }
+
+
+    }
+  }
+  .que{
+    margin:60px 30px;
+    padding-left:50px;
+    @media screen and(max-width:900px){
+        padding-left:5px;
+      }
+    @media screen and(max-width:640px){
+      padding-left:5px;
+
+    }
+
+
+    .table{
+      display:table;
+
+    }
+    .dt{
+      display: table-cell;
+      font-size:40px;
+      color:$light-orange;
+      float:left;
+      margin-right:20px;
+      @media screen and(max-width:900px){
+        font-size:30px;
+      }
+      @media screen and(max-width:640px){
+        font-size:20px;
+
+      }
+
+          }
+
+    .dd{
+      display: table-cell;
+      font-size:20px;
+      vertical-align:middle;
+      @media screen and(max-width:900px){
+        font-size:18px;
+      }
+      @media screen and(max-width:640px){
+        font-size: 14px;
+      }
+
+
+    }
+  }
+
+  .ans{
+    margin:60px 30px;
+    padding-left:50px;
+    @media screen and(max-width:900px){
+        padding-left:5px;
+      }
+    @media screen and(max-width:640px){
+      padding-left:5px;
+    }
+
+
+
+    a{
+      color:skyblue;
+    }
+
+    .table2{
+      display:table;
+    }
+    .dt2{
+      display: table-cell;
+      font-size:40px;
+      color:$light-pink;
+      float:left;
+      margin-right:20px;
+      @media screen and(max-width:900px){
+        font-size:30px;
+      }
+      @media screen and(max-width:640px){
+        font-size:20px;
+      }
+
+
+
+    }
+    .dd2{
+      display:table-cell;
+      font-size:20px;
+      line-height:30px;
+      vertical-align:top;
+      @media screen and(max-width:900px){
+        font-size:18px;
+      }
+
+      @media screen and(max-width:640px){
+        font-size: 14px;
+      }
+
+
+    }
+
+  }
+
+  .border{
+    border-bottom:3px solid $light-orange;
+    width:90%;
+    margin:0 auto;
+    @media screen and(max-width:900px){
+        width:90%;
+      }
+    @media screen and(max-width:640px){
+      width:90%;
+    }
+
+  }
+}
