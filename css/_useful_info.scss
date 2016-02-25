@@ -1,0 +1,141 @@
+@import "variables";
+
+#main {
+	overflow: hidden;
+}
+
+#top_title {
+	height: 90px;
+	width: 450px;
+	margin: 100px 0 0 50px;
+	border-bottom: solid 5px $light-orange;
+
+	img{
+		width: 60px;
+		height: 60px;
+		margin-top: 23px;
+		margin-bottom: 7px;
+		float: left;
+	}
+
+	h1 {
+		color: #4C4C4C;
+		font-size: 65px;
+		line-height: 90px;
+		font-weight: 800;
+		float: left;
+	}
+}
+
+@media screen and (max-width: 639px) {
+	#top_title {
+		height: 45px;
+		width: 250px;
+		margin: 100px 0 0 10px;
+		border-bottom: solid 3px $light-orange;
+
+		img{
+			width: 30px;
+			height: 30px;
+			margin-top: 3px;
+			margin-bottom: 12px;
+			float: left;
+		}
+
+		h1 {
+			color: #4C4C4C;
+			font-size: 35px;
+			line-height: 45px;
+			font-weight: 800;
+			float: left;
+		}
+    }
+}
+
+#useful_info_wrapper {
+	overflow: hidden;
+	margin: 100px 0;
+
+	.useful_info_block {
+		width: 90%;
+		overflow: hidden;
+		margin: 40px auto;
+
+		h2 {
+			height: 40px;
+			width: 100%;
+			font-size: 20px;
+			line-height: 40px;
+			padding-left: 20px;
+			background-color: $light-orange;
+			color: white;
+		}
+
+		.useful_info_content {
+			width: 100%;
+			overflow: hidden;
+
+			img {
+				height: 150px;
+				width: 150px;
+				margin: 25px;
+				float: left;
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-position: 50% 50%;
+			}
+
+			.useful_info_textarea {
+				margin: 0;
+				overflow: hidden;
+				width: 500px;
+				margin-top: 25px;
+				float: left;
+			}
+		}
+	}
+
+	@media screen and (min-width: 639px) and (max-width: 1023px) {
+		.useful_info_block {
+
+			.useful_info_content {
+
+				.useful_info_textarea {
+					width: 360px;
+					margin-top: 25px;
+					font-size: 15px;
+				}
+			}
+		}
+	}
+
+	@media screen and (max-width: 639px) {
+		.useful_info_block {
+			width: 80%;
+
+			h2 {
+				padding-left: 10px;
+				font-size: 12px;
+				font-weight: 600;
+			}
+
+			.useful_info_content {
+
+				img {
+					display: block;
+					height: 200px;
+					width: 80%;
+					margin: 20px calc(20% / 2);
+				}
+
+				.useful_info_textarea {
+					width: 100%;
+					font-size: 13px;
+				}
+			}
+		}
+	}
+}
+
+
+
