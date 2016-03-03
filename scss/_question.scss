@@ -1,0 +1,34 @@
+/*=========================
+　　　　　共通部分
+=========================*/
+.question_area{
+
+	.question_single_area{
+				margin-bottom: 25px;
+				border-bottom: 1px dotted $orange;
+
+		.question_single_text{
+				text-align: left;
+
+			.question_text_question{
+				font-size: 1rem;
+
+			}
+
+			.question_text_answer{
+				font-size: 1rem;
+
+			}
+		}
+
+		.question_strong_mark{
+			font-size: 1.5rem;
+			color: $orange;
+		}
+
+		.answer_strong_mark{
+			font-size: 1.5rem;
+			color: $pink;
+		}
+	}
+}

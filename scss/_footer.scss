@@ -1,0 +1,37 @@
+/*=========================
+　　　　　共通部分
+=========================*/
+.footer_menu2{
+	text-align: center;
+	background-color: $orange;
+	color: #fff;
+
+	ul{
+		margin: 0px;
+		padding: 0px;
+
+		li{
+			list-style: none;
+			display: inline-block;
+			padding: 20px 10px 20px 10px;
+			margin-bottom: 0px;
+			color: #fff;
+
+
+			a{
+				color: #fff;
+				font-size: 0.6rem;
+			}
+		}
+	}
+}
+
+.footer_copyright{
+	text-align: center;
+	display: block;
+	background-color: #545454;
+	color: #fff;
+	font-size: 0.6rem;
+	width: 100%;
+	padding: 20px 0px 10px 0px;
+}

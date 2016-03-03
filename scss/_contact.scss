@@ -1,0 +1,115 @@
+/*=========================
+　　　　　共通部分
+=========================*/
+.contact_box{
+	box-shadow: 0px 1px 7px #e4e4e4;
+	border-radius: 5px;
+	border: 1px solid $bd-gray;
+	padding: 4% 5%;
+	margin: 0 auto;
+	color: #545454;
+	background-color: #fff;
+
+h1{
+	font-size: 1.5rem;
+	padding: 0px 0px 0px 10px;
+	margin-bottom: 4%;
+	border-left: 3px solid $orange;
+	color: $orange;
+	font-weight: bold;
+	text-align: left;
+}
+
+.contact_small_text p{
+	font-size: 0.8rem;
+	color: #545454;
+	margin-bottom: 20px;
+	padding: 0px 0px 10px 0px;
+	line-height: 1.8;
+	text-align: left;
+	border-bottom: 1px solid #e4e4e4;
+}
+
+.contact_textarea{
+	width: 100%;
+	border: 1px solid $bd-gray;
+	font-size: 1rem;
+	line-height: 2;
+	padding-left: 10px;
+	margin-bottom: 10px;
+}
+
+label,p{
+	font-size: 1.1rem;
+	color: #545454;
+	text-align: left;
+	font-weight: normal;
+
+}
+
+	.contact_mast_mark{
+		background-color: $orange;
+		padding: 1px 5px;
+		color: #fff;
+		border-radius: 5px;
+		font-size: 0.5rem;
+		display: inline-block;
+		margin: 0px 0px 5px 10px;
+		vertical-align: middle;
+	}
+
+.contact_btn{
+		background: rgba($orange,1);
+		border: 2px solid rgba($orange,1);
+		color: #fff;
+		font-weight: bold;
+		padding: 1.5%;
+		transition: all 0.8s;
+		border-radius: 5px;
+		width: 100%;
+
+		&:hover{
+			background: rgba(#fff,1);
+			color: $orange;
+		}
+
+}
+}
+
+/*=========================
+　　　　　XS部分
+=========================*/
+@media screen and (max-width: 768px) {
+.contact_box{
+	width: 100%;
+}
+}
+
+
+/*=========================
+　　　　　SM部分
+=========================*/
+@media screen and (min-width: 769px) and (max-width: 991px) {
+.contact_box{
+	width: 90%;
+}
+}
+
+/*=========================
+　　　　　MD部分
+=========================*/
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+.contact_box{
+	width: 70%;
+}
+}
+
+/*=========================
+　　　　　部分
+=========================*/
+@media screen and (min-width: 1200px) {
+.contact_box{
+	width: 65%;
+}
+}
+

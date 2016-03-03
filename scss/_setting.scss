@@ -1,0 +1,36 @@
+html{
+
+	li{
+		list-style-type: none;
+	}
+
+	a{
+		color: #fff;
+	}
+}
+
+/*------------スマホ、タブレット、共通画面------------*/
+
+/*------------スマホ------------*/
+@media screen and (max-width:480px){
+
+	html{
+		font-size : 12px;
+	}
+
+}
+/*------------タブレット------------*/
+@media screen and (min-width:481px) and (max-width:768px){
+
+	html{
+		font-size : 14px;
+	}
+}
+
+/*------------PC------------*/
+@media screen and (min-width:769px){
+
+	html{
+		font-size : 16px;
+	}
+}

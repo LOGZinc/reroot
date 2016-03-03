@@ -1,0 +1,8 @@
+// 
+// @TODO: Add docs to border!
+//
+
+@mixin border($color) {
+	border: 3px solid $color;
+}
+

@@ -1,0 +1,829 @@
+/*=========================
+　　　　　共通部分
+=========================*/
+.smartphone_menu{
+	border-top: 5px solid $orange;
+	background-color: rgba(#fff,1);
+	text-align: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 700px;
+	z-index: 200;
+	display: none;
+	transition: all 0.2;
+	font-size: 1rem;
+	width: 100%;
+	background-color: #FAF7F0;
+
+	.smartphone_menu_close_btn{
+		padding: 15px 20px;
+		cursor: pointer;
+		color: #fff;
+		background-color: #9d9d9d;
+		text-align: center;
+	}
+
+	ul{
+		border-bottom: 10px;
+
+	img{
+		width: 40%;
+		padding: 14px;
+		display: block;
+		text-align: left;
+
+	}
+
+
+	li{
+		list-style-type: none;
+		border-bottom: 1px dotted $orange;
+		width: 100%;
+
+	span{
+		color: $orange;
+		text-align: right;
+	}
+
+
+		a{
+			color: $orange;
+			display: block;
+			text-align: left;
+			padding: 15px 20px;
+			transition: all 0.8s;
+
+			&:hover{
+				background-color: rgba($orange,0.6);
+				color: #fff;
+			}
+		}
+	}
+
+}
+
+	.smartphone_menu_booking{
+		color: #fff;
+		background: rgba(#FFFBEC,1);
+		padding: 20px;
+
+		.smartphone_menu_title{
+			width: 100%;
+			display: block;
+			color: $orange;
+			padding-bottom: 10px;
+		}
+
+
+		.smartphone_menu_address{
+			font-size: 1rem;
+			display: inline-block;
+			width: 48%;
+			float: left;
+			text-align: center;
+			background: rgba($orange,0.6);
+			vertical-align: top;
+
+			a{
+				padding: 10px;
+				display: block;
+				color: #fff;
+				border: 2px solid rgba($orange,0.6);
+
+			&:hover{
+				background-color: #fff;
+				border: 2px solid rgba($orange,0.6);
+				color: $orange;
+			}
+
+			}
+
+		}
+
+		.smartphone_menu_tel{
+			font-size: 1rem;
+			display: inline-block;
+			width: 48%;
+			float: right;
+			text-align: center;
+			background: rgba($pink,0.6);
+			vertical-align: top;
+
+			a{
+				padding: 10px;
+				display: block;
+				color: #fff;
+				border: 2px solid rgba($pink,0.6);
+
+			&:hover{
+				background-color: #fff;
+				border: 2px solid rgba($pink,0.6);
+				color: $pink;
+			}
+
+			}
+
+		}
+	}
+}
+
+/*=========================
+　　　　　XS部分
+=========================*/
+@media screen and (max-width: 768px) {
+.jumbotron{
+	background: url(img/top_photo_small.jpg);
+	background-size: cover;
+	text-align: center;
+	height: 400px;
+
+.jumbotron_copy_area{
+		width: 80%;
+		position:absolute; /* 絶対配置 */
+		top:35%; /* 上から半分 */
+		left:50%; /* 左から半分 */
+		/* 要素の大きさの半分引く（CSS3） */
+		-webkit-transform: translate(-50%,-50%);
+		-moz-transform: translate(-50%,-50%);
+		transform: translate(-50%,-50%);
+
+	.jumbotron_big_copy{
+		font-size: 1.7rem;
+		color: $orange;
+		line-height: 1.6;
+
+		img{
+			width: 200px;
+		}
+
+	}
+
+	.jumbotron_small_copy{
+		font-size: 1rem;
+		line-height: 1.7;
+	}
+}
+}
+.nav{
+	width: 100%;
+	padding: 3% 0%;
+	background: #fff;
+	border-top: 5px solid $orange;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 150;
+
+	.nav_top{
+		width: 100%;
+
+		.nav_top_logo{
+			width: 130px;
+			display: inline-block;
+
+			img{
+				width: 100%;
+			}
+		}
+
+		.nav_btn{
+			float: right;
+			text-align: right;
+			width: 40px;
+			display: inline-block;
+			cursor: pointer;
+
+			span{
+				height: 3px;
+				width: 28px;
+				margin: 6px;
+				background: $orange;
+				display: block;
+				cursor: pointer;
+				border-radius: 20px;
+			}
+
+		}
+	}
+
+	.nav_bottom{
+		display: none;
+	}
+}
+
+		.step_area_img_list{
+			img{
+				width: 30%;
+				margin: 7% 0%;
+			}
+		}
+}
+
+/*=========================
+　　　　　SM部分
+=========================*/
+@media screen and (min-width: 769px) and (max-width: 991px) {
+.jumbotron{
+	background: url(img/top_photo.jpg);
+	background-size: cover;
+	text-align: left;
+	height: 400px;
+
+.jumbotron_copy_area{
+		width: 50%;
+		position:absolute; /* 絶対配置 */
+		top:45%; /* 上から半分 */
+		left:35%; /* 左から半分 */
+		/* 要素の大きさの半分引く（CSS3） */
+		-webkit-transform: translate(-50%,-50%);
+		-moz-transform: translate(-50%,-50%);
+		transform: translate(-50%,-50%);
+
+	.jumbotron_big_copy{
+		font-size: 2.2rem;
+		color: $orange;
+		line-height: 1.6;
+
+		img{
+			width: 200px;
+		}
+
+
+	}
+
+	.jumbotron_small_copy{
+		font-size: 1rem;
+		line-height: 1.7;
+		color: #fff;
+	}
+}
+}
+
+.nav{
+	width: 100%;
+	padding: 2% 0%;
+	background: #fff;
+	border-top: 5px solid $orange;
+
+	.nav_top{
+		width: 100%;
+
+		.nav_top_logo{
+			width: 30%;
+			display: inline-block;
+			margin-bottom: 3%;
+
+			img{
+				width: 200px;
+			}
+		}
+
+		.nav_top_booking_btn{
+			float: right;
+			text-align: right;
+			width: 60%;
+			display: inline-block;
+			border-radius: 5px;
+
+			ul{
+
+				li{
+					display: inline-block;
+					padding: 3%;
+					background: $pink;
+					border-radius: 5px;
+
+					a{
+						color: #fff;
+					}
+				}
+
+			}
+		}
+	}
+
+	.nav_bottom{
+
+		width: 100%;
+		ul{
+			li{
+				display: inline-block;
+				box-sizing: content-box;
+				width: 24.3%;
+				padding: 1% 0%;
+				text-align: center;
+				border-left: 1px dotted #e4e4e4;
+
+				a{
+					color: #545454;
+
+							&:hover{
+								color: $orange;
+							}
+
+				}
+
+				&:last-child{
+					border-left: 1px dotted #e4e4e4;
+				}
+			}
+		}
+	}
+}
+
+
+.nav_scroll{
+	width: 100%;
+	padding: 1% 0%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	background: #fff;
+	opacity: 0;
+	transition: all 0.5s;
+	border-top: 5px solid $orange;
+
+	.container{
+	padding: 0px;
+}
+
+
+	.nav_top{
+		width: 100%;
+
+		.nav_top_logo{
+			width: 12%;
+			display: inline-block;
+
+			img{
+				padding-top: 5px;
+				width: 100%;
+			}
+		}
+
+		.nav_top_menu_btn{
+			display: inline-block;
+			padding: 0px 4%;
+
+			ul{
+				display: inline-block;
+
+				li{
+					display: inline-block;
+					list-style-type: none;
+					padding: 0px 10px;
+					font-size: 0.8rem;
+					border-right: 1px dotted #e4e4e4;
+					border-radius: 5px;
+
+				a{
+					color: #545454;
+
+							&:hover{
+								color: $orange;
+							}
+
+				}
+
+				&:last-child{
+					border-right: 1px dotted #e4e4e4;
+				}
+
+
+				}
+
+			}
+		}
+
+		.nav_top_booking_btn{
+			float: right;
+			text-align: right;
+			display: inline-block;
+			font-size: 0.7rem;
+			width: 25%;
+
+			ul{
+
+				li{
+					display: inline-block;
+					padding: 3%;
+					background: $pink;
+					border-radius: 5px;
+
+					a{
+						color: #fff;
+					}
+				}
+
+			}
+		}
+	}
+}
+}
+
+
+/*=========================
+　　　　　MD部分
+=========================*/
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+.jumbotron{
+	background: url(img/top_photo.jpg);
+	background-size: cover;
+	text-align: center;
+	height: 470px;
+
+.jumbotron_copy_area{
+		width: 45%;
+		position:absolute; /* 絶対配置 */
+		top:58%; /* 上から半分 */
+		left:35%; /* 左から半分 */
+		/* 要素の大きさの半分引く（CSS3） */
+		-webkit-transform: translate(-50%,-50%);
+		-moz-transform: translate(-50%,-50%);
+		transform: translate(-50%,-50%);
+		text-align: left;
+
+	.jumbotron_big_copy{
+		font-size: 2.6rem;
+		color: $orange;
+		line-height: 1.6;
+
+		img{
+			width: 300px;
+		}
+
+	}
+
+	.jumbotron_small_copy{
+		font-size: 1rem;
+		line-height: 1.7;
+		color: #fff;
+	}
+}
+}
+
+
+.nav{
+	width: 100%;
+	padding: 2% 0%;
+	background: #fff;
+	border-top: 5px solid $orange;
+
+	.nav_top{
+		width: 100%;
+
+		.nav_top_logo{
+			width: 30%;
+			display: inline-block;
+			margin-bottom: 3%;
+
+			img{
+				width: 200px;
+			}
+		}
+
+		.nav_top_booking_btn{
+			float: right;
+			text-align: right;
+			width: 60%;
+			display: inline-block;
+
+			ul{
+
+				li{
+					display: inline-block;
+					padding: 3%;
+					background: $pink;
+					border-radius: 5px;
+
+					a{
+						color: #fff;
+					}
+				}
+
+			}
+		}
+	}
+
+	.nav_bottom{
+
+		width: 100%;
+		ul{
+			li{
+				display: inline-block;
+				box-sizing: content-box;
+				width: 24.4%;
+				padding: 1% 0%;
+				text-align: center;
+
+				a{
+					color: #545454;
+
+							&:hover{
+								color: $orange;
+							}
+
+				}
+
+				&:last-child{
+					border-left: 1px dotted #e4e4e4;
+				}
+			}
+		}
+	}
+}
+
+
+.nav_scroll{
+	width: 100%;
+	padding: 1% 0%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	background: #fff;
+	opacity: 0;
+	transition: all 0.5s;
+	border-top: 5px solid $orange;
+
+	.container{
+	padding: 0px;
+}
+
+
+	.nav_top{
+		width: 100%;
+
+		.nav_top_logo{
+			width: 12%;
+			display: inline-block;
+
+			img{
+				padding-top: 5px;
+				width: 100%;
+			}
+		}
+
+		.nav_top_menu_btn{
+			display: inline-block;
+			padding: 0px 4%;
+
+			ul{
+				display: inline-block;
+
+				li{
+					display: inline-block;
+					list-style-type: none;
+					padding: 0px 10px;
+					font-size: 0.8rem;
+					border-right: 1px dotted #e4e4e4;
+
+				a{
+					color: #545454;
+
+							&:hover{
+								color: $orange;
+							}
+
+				}
+
+				&:last-child{
+					border-right: 1px dotted #e4e4e4;
+				}
+
+
+				}
+
+			}
+		}
+
+		.nav_top_booking_btn{
+			float: right;
+			text-align: right;
+			display: inline-block;
+			font-size: 0.7rem;
+			width: 25%;
+
+			ul{
+
+				li{
+					display: inline-block;
+					padding: 3%;
+					background: $pink;
+					border-radius: 5px;
+
+					a{
+						color: #fff;
+					}
+				}
+
+			}
+		}
+	}
+}
+}
+
+
+/*=========================
+　　　　　LG部分
+=========================*/
+@media screen and (min-width: 1200px) {
+.jumbotron{
+	background: url(img/top_photo.jpg);
+	background-size: cover;
+	text-align: left;
+	height: 470px;
+
+.jumbotron_copy_area{
+		width: 45%;
+		position:absolute; /* 絶対配置 */
+		top:60%; /* 上から半分 */
+		left:35%; /* 左から半分 */
+		/* 要素の大きさの半分引く（CSS3） */
+		-webkit-transform: translate(-50%,-50%);
+		-moz-transform: translate(-50%,-50%);
+		transform: translate(-50%,-50%);
+
+	.jumbotron_big_copy{
+		font-size: 2.8rem;
+		color: $orange;
+		line-height: 1.6;
+
+		img{
+			width: 400px;
+		}
+	}
+
+	.jumbotron_small_copy{
+		font-size: 1.1rem;
+		line-height: 1.7;
+		color: #fff;
+	}
+}
+}
+
+.nav{
+	width: 100%;
+	padding: 2% 0%;
+	background: #fff;
+	border-top: 5px solid $orange;
+
+	.nav_top{
+		width: 100%;
+
+		.nav_top_logo{
+			width: 30%;
+			display: inline-block;
+			margin-bottom: 3%;
+
+			img{
+				width: 200px;
+			}
+		}
+
+		.nav_top_booking_btn{
+			float: right;
+			text-align: right;
+			width: 60%;
+			display: inline-block;
+
+			ul{
+
+				li{
+					display: inline-block;
+					padding: 3%;
+					background: $pink;
+					border-radius: 5px;
+
+					a{
+						color: #fff;
+					}
+				}
+
+			}
+		}
+	}
+
+	.nav_bottom{
+
+		width: 100%;
+		ul{
+			li{
+				display: inline-block;
+				box-sizing: content-box;
+				width: 24.5%;
+				padding: 1% 0%;
+				text-align: center;
+				border-left: 1px dotted #e4e4e4;
+				border-radius: 5px;
+
+				a{
+					color: #545454;
+
+							&:hover{
+								color: $orange;
+							}
+
+				}
+
+				&:last-child{
+					border-right: 1px dotted #e4e4e4;
+				}
+			}
+		}
+	}
+}
+
+
+.nav_scroll{
+	width: 100%;
+	padding: 1% 0%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	background: #fff;
+	opacity: 0;
+	transition: all 0.5s;
+	border-top: 5px solid $orange;
+
+	.container{
+	padding: 0px;
+}
+
+
+	.nav_top{
+		width: 100%;
+
+		.nav_top_logo{
+			width: 12%;
+			display: inline-block;
+
+			img{
+				padding-top: 5px;
+				width: 100%;
+			}
+		}
+
+		.nav_top_menu_btn{
+			display: inline-block;
+			padding: 0px 4%;
+
+			ul{
+				display: inline-block;
+
+				li{
+					display: inline-block;
+					list-style-type: none;
+					padding: 0px 15px;
+					font-size: 0.8rem;
+					border-left: 1px dotted #e4e4e4;
+
+				a{
+					color: #545454;
+
+							&:hover{
+								color: $orange;
+							}
+
+				}
+
+				&:last-child{
+					border-right: 1px dotted #e4e4e4;
+				}
+
+
+				}
+
+			}
+		}
+
+		.nav_top_booking_btn{
+			float: right;
+			text-align: right;
+			display: inline-block;
+			font-size: 0.8rem;
+			width: 27%;
+
+			ul{
+
+				li{
+					display: inline-block;
+					padding: 3%;
+					background: $pink;
+					border-radius: 5px;
+
+
+					a{
+						color: #fff;
+					}
+				}
+
+			}
+		}
+	}
+}
+}

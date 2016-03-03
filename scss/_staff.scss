@@ -1,0 +1,23 @@
+@import "variables";
+
+/*=========================
+　　　　　共通部分
+=========================*/
+.private_staff_area{
+	width: 100%;
+	margin-bottom: 5%;
+
+	img{
+		width: 100%;
+		height: auto;
+	}
+
+	.private_staff_text{
+		padding: 10px;
+
+	.private_staff_name{
+		font-size: 1rem;
+		color: $orange;
+	}
+}
+}

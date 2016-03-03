@@ -1,0 +1,111 @@
+@import "variables";
+
+/*=========================
+　　　　全体共通部分
+=========================*/
+body{
+	font-family: "游ゴシック体","YuGothic";
+	text-decoration: none;
+	background-color: #FAF7F0;
+}
+
+html{
+	color: #545454;
+	list-style: none;
+	text-decoration: none;
+}
+
+section{
+	padding: 4% 0% 6% 0%;
+}
+
+ul{
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+
+.clearfix{
+	clear: both;
+}
+
+.page_common_headeing{
+	font-size: 1.5rem;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+	color: $orange;
+	border-bottom: 1px dotted #e4e4e4;
+}
+
+.strong_yellow_text{
+	background-color: rgba(yellow,0.7);
+}
+
+/*gridのgutter調整*/
+.row-0{
+    margin-left:0px;
+    margin-right:0px;
+ 
+    > div{
+        padding-right:0px;
+        padding-left:0px;
+    }
+}
+
+.row-10{
+    margin-left:-5px;
+    margin-right:-5px;
+ 
+    > div{
+        padding-right:5px;
+        padding-left:5px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+body{
+	padding: 13% 0%;
+}
+
+	html{
+		font-size: 13px;
+	}
+.PageCommonSetting{
+	padding: 10% 0%;
+	background-color: #FAF7F0;
+}
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 991px) {
+	html{
+		font-size: 15px;
+	}
+.PageCommonSetting{
+	padding: 5% 0%;
+	background-color: #FAF7F0;
+}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+	html{
+		font-size: 16px;
+	}
+
+.PageCommonSetting{
+	padding: 4% 0%;
+	background-color: #FAF7F0;
+}
+}
+
+@media screen and (min-width: 1200px) {
+	html{
+		font-size: 16px;
+	}
+
+.PageCommonSetting{
+	padding: 3% 0%;
+	background-color: #FAF7F0;
+}
+}

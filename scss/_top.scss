@@ -1,0 +1,445 @@
+@import "btn";
+
+
+/*=========================
+　　　　　共通部分
+=========================*/
+.font_color_pink{
+	color: $pink;
+	font-weight: bold;
+}
+
+.top_headeing{
+	color: $orange;
+	border-bottom: 2px solid $orange;
+	display: inline-block;
+	padding-bottom: 5px;
+}
+
+.top_headeing_kana{
+	font-size: 0.9rem;
+	padding-bottom: 1%;
+}
+
+
+.more_btn{
+	@include more_btn(rgba($pink,0.8));
+}
+
+.section_text{
+	padding: 0% 0% 3% 0%;
+}
+
+
+.gallery_area{
+	width: 100%;
+	position: relative;
+	border-bottom: 1px dotted $orange;
+
+.gallery_slider{
+	width: 100%;
+	height: auto;
+
+	img{
+		width: 100%;
+		height: auto;
+	}
+}
+}
+
+.gallery_slider_nav{
+	width: 100%;
+	float: left;
+
+	img{
+		width: 100%;
+	}
+}
+
+.sns_area{
+
+	border-bottom: 1px dotted $orange;
+
+	/*.sns_Twitter{
+		border: 4px solid rgba($pink,0.4);
+		border-radius: 10px;
+
+	}
+
+	.sns_Facebook{
+		border: 4px solid rgba($pink,0.4);
+		border-radius: 10px;
+
+	}*/
+}
+
+
+.banner_area{
+	background-color: #FFF9EE;
+
+	img{
+		width: 100%;
+		margin-bottom: 3%;
+	}
+
+}
+
+/*=========================
+　　　　　XS部分
+=========================*/
+@media screen and (max-width: 768px) {
+
+.top_headeing{
+	font-size: 1.7rem;
+	color: $orange;
+	margin-bottom: 10px;
+	padding-bottom: 5px;
+}
+
+.step_area_text{
+		font-size: 0.9rem;
+		width: 80%;
+		margin: 20px auto;
+
+	p{
+		width: 100%;
+	}
+}
+
+.step_area_img_list{
+	width: 100%;
+	vertical-align: top;
+	margin-bottom: 3%;
+
+	img{
+		display: inline-block;
+		width: 30%;
+		margin: 0;
+		vertical-align: top;
+	}
+
+	.step_area_list_text{
+		display: inline-block;
+		width: 62%;
+		vertical-align: top;
+		text-align: left;
+		margin-left: 2%;
+		font-size: 0.9rem;
+	}
+}
+
+.corporate_philosophy_area{
+	background: url(img/corporate_philosophy_bg.jpg);
+	background-size: cover;
+
+	p{
+		font-size: 0.9rem;
+		width: 90%;
+		margin: 0 auto;
+		line-height: 1.8;
+	}
+}
+
+.blog_area{
+	border-bottom: 1px dotted $orange;
+
+	.blog_area_text p{
+			font-size: 0.9rem;
+			width: 100%;
+			margin: 0 auto;
+	}
+
+	.blog_article{
+		background: #fff;
+		border: 1px dotted #e4e4e4;
+		margin-bottom: 2%;
+		width: 100%;
+
+		img{
+			width: 35%;
+			height: auto;
+			display: inline-block;
+			vertical-align: top;
+		}
+
+		.blog_article_text_area{
+			padding: 0% 10% 3% 3%;
+			display: inline-block;
+
+		h2{
+			font-size: 0.9rem;
+			font-weight: bold;
+		}
+
+		p{
+			font-size: 0.7rem;
+		}
+
+		}
+	}
+}
+
+}
+
+/*=========================
+　　　　　SM部分
+=========================*/
+@media screen and (min-width: 769px) and (max-width: 991px) {
+
+.top_headeing{
+	font-size: 1.9rem;
+	color: $orange;
+}
+
+.step_area_text{
+		font-size: 0.9rem;
+		width: 70%;
+		margin: 0 auto;
+
+	p{
+
+	}
+}
+
+	.step_area_img{
+		width: 100%;
+		margin-bottom: 5%;
+
+		.step_area_img_list{
+			margin-bottom: 10%;
+
+			img{
+				width: 80%;
+				margin-bottom: 5%;
+			}
+		}
+	}
+
+	p{
+		line-height: 1.8;
+		font-size: 0.8rem;
+	}
+
+.corporate_philosophy_area{
+	background: url(img/corporate_philosophy_bg.jpg);
+	background-size: cover;
+
+	p{
+		font-size: 0.9rem;
+		width: 80%;
+		margin: 0 auto;
+		line-height: 1.8;
+	}
+}
+
+.blog_area{
+	border-bottom: 1px dotted $orange;
+
+	.blog_area_text p{
+			font-size: 0.9rem;
+			width: 60%;
+			margin: 0 auto;
+	}
+
+	.blog_article{
+		background: #fff;
+		border: 1px dotted #e4e4e4;
+		margin-bottom: 5%;
+
+		img{
+			width: 100%;
+		}
+
+		.blog_article_text_area{
+			padding: 0% 10% 3% 10%;
+
+		h2{
+			font-size: 0.9rem;
+			font-weight: bold;
+		}
+
+		p{
+			font-size: 0.7rem;
+		}
+
+		}
+	}
+}
+
+}
+
+
+/*=========================
+　　　　　MD部分
+=========================*/
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+
+.top_headeing{
+	font-size: 1.9rem;
+	color: $orange;
+}
+
+.step_area_text{
+		font-size: 0.9rem;
+		width: 50%;
+		margin: 0 auto;
+
+	p{
+
+	}
+}
+
+	.step_area_img{
+		margin-bottom: 5%;
+
+		.step_area_img_list{
+			width: 100%;
+			margin-bottom: 5%;
+
+			img{
+				width: 100%;
+				margin-bottom: 5%;
+			}
+		}
+	}
+
+	p{
+		line-height: 1.8;
+		font-size: 0.8rem;
+	}
+
+.corporate_philosophy_area{
+	background: url(img/corporate_philosophy_bg.jpg);
+	background-size: cover;
+
+	p{
+		font-size: 0.9rem;
+		width: 70%;
+		margin: 0 auto;
+		line-height: 1.8;
+	}
+}
+
+.blog_area{
+	border-bottom: 1px dotted $orange;
+
+	.blog_area_text p{
+			font-size: 0.9rem;
+			width: 60%;
+			margin: 0 auto;
+	}
+
+	.blog_article{
+		background: #fff;
+		border: 1px dotted #e4e4e4;
+		margin-bottom: 5%;
+
+		img{
+			width: 100%;
+		}
+
+		.blog_article_text_area{
+			padding: 0% 10% 3% 10%;
+
+		h2{
+			font-size: 0.9rem;
+			font-weight: bold;
+		}
+
+		p{
+			font-size: 0.7rem;
+		}
+
+		}
+	}
+}
+
+}
+
+
+/*=========================
+　　　　　LG部分
+=========================*/
+@media screen and (min-width: 1200px) {
+
+.top_headeing{
+	font-size: 1.9rem;
+	color: $orange;
+}
+
+.step_area_text{
+		font-size: 0.9rem;
+		width: 50%;
+		margin: 0 auto;
+
+	p{
+
+	}
+}
+
+	.step_area_img{
+		width: 100%;
+
+		.step_area_img_list{
+			margin-bottom: 5%;
+
+			img{
+				width: 100%;
+				margin-bottom: 5%;
+			}
+		}
+	}
+
+	p{
+		line-height: 1.8;
+		font-size: 0.8rem;
+	}
+
+.corporate_philosophy_area{
+	background: url(img/corporate_philosophy_bg.jpg);
+	background-size: cover;
+
+	p{
+		font-size: 0.9rem;
+		width: 70%;
+		margin: 0 auto;
+		line-height: 2;
+	}
+}
+
+.blog_area{
+	border-bottom: 1px dotted $orange;
+
+	.blog_area_text p{
+			font-size: 0.9rem;
+			width: 60%;
+			margin: 0 auto;
+	}
+
+	.blog_article{
+		background: #fff;
+		border: 1px dotted #e4e4e4;
+		margin-bottom: 5%;
+
+		img{
+			width: 100%;
+		}
+
+		.blog_article_text_area{
+			padding: 0% 10% 3% 10%;
+
+		h2{
+			font-size: 0.9rem;
+			font-weight: bold;
+		}
+
+		p{
+			font-size: 0.7rem;
+		}
+
+		}
+	}
+}
+
+}
+

@@ -1,0 +1,31 @@
+/*
+Theme Name: reroot
+Description:rerootのHP用のテーマです
+Theme URI: http://xn--fdk7cd2e.com/
+Author: LOGZ,inc
+Author URI: NONE
+Version: NONE
+License: NONE
+License URI: NONE
+*/
+
+/*bootstrap*/
+@import "../assets/stylesheets/bootstrap";
+
+
+/*オリジナル全体用*/
+@import "all";
+@import "variables";
+@import "header";
+@import "footer";
+@import "font-awesome.css";
+
+/*オリジナル各ページ用*/
+@import "top";
+@import "contact";
+@import "staff";
+@import "signage";
+@import "privacy_policy";
+@import "question";
+@import "curriculum";
+@import "useful_info";

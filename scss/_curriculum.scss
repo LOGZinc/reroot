@@ -1,0 +1,467 @@
+/*=========================
+　　　　　XS部分
+=========================*/
+@media screen and (max-width: 768px) {
+.curriculum_step_area{
+	margin-bottom: 40px;
+	img{
+		width: 100%;
+		margin-bottom: 10px;
+	}
+
+}
+
+.carriculum_menu{
+	color: $orange;
+	background-color: #fff;
+
+	li{
+		list-style-type: none;
+		padding: 20px;
+		cursor: pointer;
+
+		&:first-child{
+			color: #fff;
+			background-color: $orange;
+		}
+	}
+}
+
+.carriculum_menu_active{
+		background-color: $orange;
+		color: #fff;
+}
+
+.carriculum_menu_remove{
+		background-color: #fff;
+		color: $orange;
+}
+
+#carriculum_content_root{
+
+	img{
+		width: 300px;
+		padding: 10px;
+		display: inline-block;
+	}
+}
+
+#carriculum_content_interview{
+	display: none;
+
+	img{
+		width: 300px;
+		padding: 10px;
+		display: inline-block;
+	}
+}
+
+#carriculum_content_training{
+	display: none;
+
+	img{
+		width: 300px;
+		padding: 10px;
+		display: inline-block;
+	}
+}
+
+#carriculum_content_Job_hunting{
+	display: none;
+
+	img{
+		width: 100%;
+		padding: 10px;
+	}
+}
+
+#carriculum_content_counseling{
+	display: none;
+
+	img{
+		width: 300px;
+		padding: 10px;
+		display: inline-block;
+	}
+}
+
+.carriculum_content{
+	width: 100%;
+	border: 1px dotted $orange;
+	height: auto;/*試し*/
+	background: #fff;
+	padding: 30px;
+
+	.carriculum_content_step_namber{
+		display: block;
+		font-size: 0.9rem;
+		color: $orange;
+	}
+
+	h1{
+		color: #545454;
+		font-size: 1.8rem;
+		margin: 0;
+		padding: 10px;
+
+	}
+
+	p{
+		width: 100%;
+		margin: 20px auto;
+		font-size: 1rem;
+	}
+}
+
+}
+
+/*=========================
+　　　　　SM部分
+=========================*/
+@media screen and (min-width: 769px) and (max-width: 991px) {
+.curriculum_step_area{
+	margin-bottom: 40px;
+	img{
+		width: 100%;
+		margin-bottom: 10px;
+	}
+
+}
+
+.carriculum_menu{
+	color: $orange;
+	background-color: #fff;
+
+	li{
+		list-style-type: none;
+		padding: 20px;
+		cursor: pointer;
+
+		&:first-child{
+			color: #fff;
+			background-color: $orange;
+		}
+	}
+}
+
+.carriculum_menu_active{
+		background-color: $orange;
+		color: #fff;
+}
+
+.carriculum_menu_remove{
+		background-color: #fff;
+		color: $orange;
+}
+
+#carriculum_content_root{
+
+	img{
+		width: 300px;
+		padding: 10px;
+		display: inline-block;
+	}
+}
+
+#carriculum_content_interview{
+	display: none;
+
+	img{
+		width: 300px;
+		padding: 10px;
+		display: inline-block;
+	}
+}
+
+#carriculum_content_training{
+	display: none;
+
+	img{
+		width: 300px;
+		padding: 10px;
+		display: inline-block;
+	}
+}
+
+#carriculum_content_Job_hunting{
+	display: none;
+
+	img{
+		width: 90%;
+		padding: 10px;
+	}
+}
+
+#carriculum_content_counseling{
+	display: none;
+
+	img{
+		width: 300px;
+		padding: 10px;
+		display: inline-block;
+	}
+}
+
+.carriculum_content{
+	width: 100%;
+	border: 1px dotted $orange;
+	height: auto;/*試し*/
+	background: #fff;
+	padding: 30px;
+
+	.carriculum_content_step_namber{
+		display: block;
+		font-size: 0.9rem;
+		color: $orange;
+	}
+
+	h1{
+		color: #545454;
+		font-size: 1.8rem;
+		margin: 0;
+		padding: 10px;
+
+	}
+
+	p{
+		width: 90%;
+		margin: 20px auto;
+		font-size: 1rem;
+	}
+}
+}
+
+/*=========================
+　　　　　MD部分
+=========================*/
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+.curriculum_step_area{
+	margin-bottom: 40px;
+	img{
+		width: 100%;
+		margin-bottom: 10px;
+	}
+
+}
+
+.carriculum_menu{
+	color: $orange;
+	background-color: #fff;
+
+	li{
+		list-style-type: none;
+		padding: 20px;
+		cursor: pointer;
+
+		&:first-child{
+			color: #fff;
+			background-color: $orange;
+		}
+	}
+}
+
+.carriculum_menu_active{
+		background-color: $orange;
+		color: #fff;
+}
+
+.carriculum_menu_remove{
+		background-color: #fff;
+		color: $orange;
+}
+
+#carriculum_content_root{
+
+	img{
+		width: 300px;
+		padding: 10px;
+		display: inline-block;
+	}
+}
+
+#carriculum_content_interview{
+	display: none;
+
+	img{
+		width: 300px;
+		padding: 10px;
+		display: inline-block;
+	}
+}
+
+#carriculum_content_training{
+	display: none;
+
+	img{
+		width: 300px;
+		padding: 10px;
+		display: inline-block;
+	}
+}
+
+#carriculum_content_Job_hunting{
+	display: none;
+
+	img{
+		width: 90%;
+		padding: 10px;
+	}
+}
+
+#carriculum_content_counseling{
+	display: none;
+
+	img{
+		width: 300px;
+		padding: 10px;
+		display: inline-block;
+	}
+}
+
+.carriculum_content{
+	width: 100%;
+	border: 1px dotted $orange;
+	height: auto;/*試し*/
+	background: #fff;
+	padding: 30px;
+
+	.carriculum_content_step_namber{
+		display: block;
+		font-size: 0.9rem;
+		color: $orange;
+	}
+
+	h1{
+		color: #545454;
+		font-size: 1.8rem;
+		margin: 0;
+		padding: 10px;
+
+	}
+
+	p{
+		width: 70%;
+		margin: 20px auto;
+		font-size: 1rem;
+	}
+}
+}
+
+
+/*=========================
+　　　　　部分
+=========================*/
+@media screen and (min-width: 1200px) {
+.curriculum_step_area{
+	margin-bottom: 40px;
+	img{
+		width: 100%;
+		margin-bottom: 10px;
+	}
+
+}
+
+.carriculum_menu{
+	color: $orange;
+	background-color: #fff;
+
+	li{
+		list-style-type: none;
+		padding: 20px;
+		cursor: pointer;
+
+		&:first-child{
+			color: #fff;
+			background-color: $orange;
+		}
+	}
+}
+
+.carriculum_menu_active{
+		background-color: $orange;
+		color: #fff;
+}
+
+.carriculum_menu_remove{
+		background-color: #fff;
+		color: $orange;
+}
+
+#carriculum_content_root{
+
+	img{
+		width: 300px;
+		padding: 10px;
+		display: inline-block;
+	}
+}
+
+#carriculum_content_interview{
+	display: none;
+
+	img{
+		width: 300px;
+		padding: 10px;
+		display: inline-block;
+	}
+}
+
+#carriculum_content_training{
+	display: none;
+
+	img{
+		width: 300px;
+		padding: 10px;
+		display: inline-block;
+	}
+}
+
+#carriculum_content_Job_hunting{
+	display: none;
+
+	img{
+		width: 90%;
+		padding: 10px;
+	}
+}
+
+#carriculum_content_counseling{
+	display: none;
+
+	img{
+		width: 300px;
+		padding: 10px;
+		display: inline-block;
+	}
+}
+
+.carriculum_content{
+	width: 100%;
+	border: 1px dotted $orange;
+	height: auto;/*試し*/
+	background: #fff;
+	padding: 30px;
+
+	.carriculum_content_step_namber{
+		display: block;
+		font-size: 0.9rem;
+		color: $orange;
+	}
+
+	h1{
+		color: #545454;
+		font-size: 1.8rem;
+		margin: 0;
+		padding: 10px;
+
+	}
+
+	p{
+		width: 70%;
+		margin: 20px auto;
+		font-size: 1rem;
+	}
+}
+}
+
+

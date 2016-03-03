@@ -1,0 +1,175 @@
+/*=========================
+　　　　　共通部分
+=========================*/
+
+/*=========================
+　　　　　XS部分
+=========================*/
+@media screen and (max-width: 768px) {
+.useful_info_archive{
+	width: 100%;
+	height: auto;
+	text-align: left;
+	margin: 10px 0px 20px 0px;
+
+	.useful_info_archive_title{
+		background: $orange;
+		padding: 10px;
+		color: #fff;
+		margin-bottom: 10px;
+
+		p{
+			font-size: 1.2rem;
+			margin: 0;
+			padding:0;
+		}
+	}
+
+	img{
+		display: inline-block;
+		width: 100%;
+		height: auto;
+		float: left;
+	}
+
+	.useful_info_archive_text{
+		display: inline-block;
+		width: 100%;
+		height: auto;
+		float: left;
+		padding: 10px 0px;
+		font-size: 1rem;
+	}
+}
+
+}
+
+
+/*=========================
+　　　　　SM部分
+=========================*/
+@media screen and (min-width: 769px) and (max-width: 991px) {
+.useful_info_archive{
+	width: 100%;
+	height: auto;
+	text-align: left;
+	margin: 10px 0px 30px 0px;
+
+	.useful_info_archive_title{
+		background: $orange;
+		padding: 10px;
+		color: #fff;
+		margin-bottom: 10px;
+
+		p{
+			font-size: 1.2rem;
+			margin: 0;
+			padding:0;
+		}
+	}
+
+	img{
+		display: inline-block;
+		width: 200px;
+		height: auto;
+		float: left;
+	}
+
+	.useful_info_archive_text{
+		display: inline-block;
+		width: 60%;
+		height: auto;
+		float: left;
+		padding-left: 20px;
+		font-size: 1.2rem;
+	}
+}
+
+}
+
+
+/*=========================
+　　　　　MD部分
+=========================*/
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+.useful_info_archive{
+	width: 100%;
+	height: auto;
+	text-align: left;
+	margin: 10px 0px 30px 0px;
+
+	.useful_info_archive_title{
+		background: $orange;
+		padding: 10px;
+		color: #fff;
+		margin-bottom: 10px;
+
+		p{
+			font-size: 1.2rem;
+			margin: 0;
+			padding:0;
+		}
+	}
+
+	img{
+		display: inline-block;
+		width: 250px;
+		height: auto;
+		float: left;
+	}
+
+	.useful_info_archive_text{
+		display: inline-block;
+		width: 60%;
+		height: auto;
+		float: left;
+		padding-left: 20px;
+		font-size: 1.2rem;
+	}
+}
+
+}
+
+
+/*=========================
+　　　　　LG部分
+=========================*/
+@media screen and (min-width: 1200px) {
+.useful_info_archive{
+	width: 100%;
+	height: auto;
+	text-align: left;
+	margin: 10px 0px 30px 0px;
+
+	.useful_info_archive_title{
+		background: $orange;
+		padding: 10px;
+		color: #fff;
+		margin-bottom: 10px;
+
+		p{
+			font-size: 1.2rem;
+			margin: 0;
+			padding:0;
+		}
+	}
+
+	img{
+		display: inline-block;
+		width: 250px;
+		height: auto;
+		float: left;
+	}
+
+	.useful_info_archive_text{
+		display: inline-block;
+		width: 60%;
+		height: auto;
+		float: left;
+		padding-left: 20px;
+		font-size: 1.2rem;
+	}
+}
+
+}
+
