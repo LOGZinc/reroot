@@ -635,12 +635,12 @@
 	background: url(img/top_photo.jpg);
 	background-size: cover;
 	text-align: left;
-	height: 470px;
+	height: 580px;
 
 .jumbotron_copy_area{
 		width: 45%;
 		position:absolute; /* 絶対配置 */
-		top:60%; /* 上から半分 */
+		top:70%; /* 上から半分 */
 		left:35%; /* 左から半分 */
 		/* 要素の大きさの半分引く（CSS3） */
 		-webkit-transform: translate(-50%,-50%);

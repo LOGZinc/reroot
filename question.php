@@ -12,7 +12,11 @@ Template Name: question
 get_header(); ?>
 <section class="PageCommonSetting">
 	<div class="container">
-		<h1 class="page_common_headeing">よくある質問</h1>
+		<div class="page_common_headeing_area">
+			<h1 class="page_common_headeing">よくある質問</h1>
+			<p class="page_common_small">就労移行支援事業所やRe:Rootについての質問をまとめました。</p>
+		</div>
+		<span class="triangle"></span>
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
 				<div class="question_area">

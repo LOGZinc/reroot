@@ -11,46 +11,50 @@ Template Name: curriculum
 get_header(); ?>
 <section class="PageCommonSetting">
 	<div class="container">
-		<h1 class="page_common_headeing">カリキュラム</h1>
-		<div class="row">
-			<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 text-center">
-				<div class="curriculum_step_area">
-				<img src="<?php echo get_template_directory_uri(); ?>/img/step01.png" alt="">
-				<p>就労移行支援事業所ウイングルという環境に慣れ、就職への準備を始めます。新しい生活に慣れるまで、スタッフと相談しながら通う日数。</p>
+		<div class="page_common_headeing_area">
+			<h1 class="page_common_headeing">カリキュラム</h1>
+			<p class="page_common_small">Re:Rootのカリキュラムをご紹介します！</p>
+		</div>
+		<span class="triangle"></span>
+		<div class="curriculum_steps_area">
+			<div class="row">
+				<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 text-center">
+					<div class="curriculum_step_area">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/step01.png" alt="">
+					<p>就労移行支援事業所ウイングルという環境に慣れ、就職への準備を始めます。新しい生活に慣れるまで、スタッフと相談しながら通う日数。</p>
+					</div>
 				</div>
-			</div>
-			<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 text-center">
-				<div class="curriculum_step_area">
-				<img src="<?php echo get_template_directory_uri(); ?>/img/step02.png" alt="">
-				<p>就労移行支援事業所ウイングルという環境に慣れ、就職への準備を始めます。新しい生活に慣れるまで、スタッフと相談しながら通う日数。</p>
+				<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 text-center">
+					<div class="curriculum_step_area">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/step02.png" alt="">
+					<p>就労移行支援事業所ウイングルという環境に慣れ、就職への準備を始めます。新しい生活に慣れるまで、スタッフと相談しながら通う日数。</p>
+					</div>
 				</div>
-			</div>
-			<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 text-center">
-				<div class="curriculum_step_area">
-				<img src="<?php echo get_template_directory_uri(); ?>/img/step03.png" alt="">
-				<p>就労移行支援事業所ウイングルという環境に慣れ、就職への準備を始めます。新しい生活に慣れるまで、スタッフと相談しながら通う日数。</p>
+				<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 text-center">
+					<div class="curriculum_step_area">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/step03.png" alt="">
+					<p>就労移行支援事業所ウイングルという環境に慣れ、就職への準備を始めます。新しい生活に慣れるまで、スタッフと相談しながら通う日数。</p>
+					</div>
 				</div>
-			</div>
-			<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 text-center">
-				<div class="curriculum_step_area">
-				<img src="<?php echo get_template_directory_uri(); ?>/img/step04.png" alt="">
-				<p>就労移行支援事業所ウイングルという環境に慣れ、就職への準備を始めます。新しい生活に慣れるまで、スタッフと相談しながら通う日数。</p>
+				<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 text-center">
+					<div class="curriculum_step_area">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/step04.png" alt="">
+					<p>就労移行支援事業所ウイングルという環境に慣れ、就職への準備を始めます。新しい生活に慣れるまで、スタッフと相談しながら通う日数。</p>
+					</div>
 				</div>
 			</div>
 		</div>
-		<div class="row row-0">
-			<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 text-center">
-				<div class="carriculum_menu">
-					<ul>
-						<li id="carriculum_content_menu_root">カリキュラム</li>
-						<li id="carriculum_content_menu_interview">面談</li>
-						<li id="carriculum_content_menu_training">実習</li>
-						<li id="carriculum_content_menu_Job_hunting">就活</li>
-						<li id="carriculum_content_menu_counseling">カウンセリング</li>
-					</ul>
-				</div>
+			<div class="carriculum_menu">
+				<ul>
+					<li id="carriculum_content_menu_root">カリキュラム</li>
+					<li id="carriculum_content_menu_interview">面談</li>
+					<li id="carriculum_content_menu_training">実習</li>
+					<li id="carriculum_content_menu_Job_hunting">就活</li>
+					<li id="carriculum_content_menu_counseling">カウンセリング</li>
+				</ul>
 			</div>
-			<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 text-center">
+		<div class="row row-0">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
 				<div class="carriculum_content" id="carriculum_content_root">
 					<div class="row">
 						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">

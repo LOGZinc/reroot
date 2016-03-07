@@ -109,48 +109,30 @@ get_header(); ?>
 	</div>
 	<div class="container">
 	    <div class="row">
-			<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-				<div class="blog_article">
-					<img src="<?php echo get_template_directory_uri(); ?>/img/blog_sample1.jpg" alt="">
-					<div class="blog_article_text_area">
-						<h2>テキストが入りまーーす。</h2>
-						<p>口内炎が痛いですが頑張りま…</p>
+			<?php query_posts($query_string.'&posts_per_page=6&paged='.$paged); ?>
+				<?php if (have_posts()) :
+					while (have_posts()) : the_post(); ?>
+					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 row-10">
+					<a href="<?php the_permalink(); ?>">
+						<div class="blog_article">
+						<span class="new_mark">NEW</span>
+							<?php if ( has_post_thumbnail() ) { the_post_thumbnail( 'post-thumbnail'); } ?>
+							<div class="blog_article_text_area">
+								<h2><?php the_title(); ?></h2>
+							</div>
+						</div>
+					</a>
 					</div>
-				</div>
-			</div>
-			<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-				<div class="blog_article">
-					<img src="<?php echo get_template_directory_uri(); ?>/img/blog_sample2.jpg" alt="">
-					<div class="blog_article_text_area">
-						<h2>テキストが入りまーーす。</h2>
-						<p>口内炎が痛いですが頑張りま…</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-				<div class="blog_article">
-					<img src="<?php echo get_template_directory_uri(); ?>/img/blog_sample3.jpg" alt="">
-					<div class="blog_article_text_area">
-						<h2>テキストが入りまーーす。</h2>
-						<p>口内炎が痛いですが頑張りま…</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-				<div class="blog_article">
-					<img src="<?php echo get_template_directory_uri(); ?>/img/blog_sample3.jpg" alt="">
-					<div class="blog_article_text_area">
-						<h2>テキストが入りまーーす。</h2>
-						<p>口内炎が痛いですが頑張りま…</p>
-					</div>
-				</div>
-			</div>
+					<?php
+					endwhile; // 繰り返し処理終了
+					else : ?>
+					<?php endif; ?>
 	    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
 	    </div>
 	  	</div>
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-				<span class="more_btn"><a href="#" title="">もっと見る</a></span>
+				<span class="more_btn"><a href="/ブログ一覧">もっと見る</a></span>
 			</div>
 		</div>
 	</div>
@@ -182,7 +164,7 @@ get_header(); ?>
 		  <div><img src="<?php echo get_template_directory_uri(); ?>/img/gallary_10.jpg"></div>
 		  <div><img src="<?php echo get_template_directory_uri(); ?>/img/gallary_11.jpg"></div>
 		</div>
-		<div class="gallery_slider_nav">
+		<!--<div class="gallery_slider_nav">
 		  <div><img src="<?php echo get_template_directory_uri(); ?>/img/gallary_01.jpg"></div>
 		  <div><img src="<?php echo get_template_directory_uri(); ?>/img/gallary_02.jpg"></div>
 		  <div><img src="<?php echo get_template_directory_uri(); ?>/img/gallary_03.jpg"></div>
@@ -194,7 +176,7 @@ get_header(); ?>
 		  <div><img src="<?php echo get_template_directory_uri(); ?>/img/gallary_09.jpg"></div>
 		  <div><img src="<?php echo get_template_directory_uri(); ?>/img/gallary_10.jpg"></div>
 		  <div><img src="<?php echo get_template_directory_uri(); ?>/img/gallary_11.jpg"></div>
-		</div>
+		</div>-->
 	</section>
 	<!--SNSエリア-->
 	<section class="sns_area">

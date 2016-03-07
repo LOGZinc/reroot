@@ -42,42 +42,55 @@ $(function(){
 $(function(){
 	$("#carriculum_content_menu_root").click(function(){
 		$("#carriculum_content_root").show();
-		$("#carriculum_content_menu_root").css("background-color", "#f19319");
+		$("#carriculum_content_menu_root").css("background-color", "#d2116f");
 		$("#carriculum_content_menu_root").css("color", "#FFF");
 		$("#carriculum_content_menu_interview,#carriculum_content_menu_training,#carriculum_content_menu_Job_hunting,#carriculum_content_menu_counseling").css("background-color", "#FFF");
-		$("#carriculum_content_menu_interview,#carriculum_content_menu_training,#carriculum_content_menu_Job_hunting,#carriculum_content_menu_counseling").css("color", "#f19319");
+		$("#carriculum_content_menu_interview,#carriculum_content_menu_training,#carriculum_content_menu_Job_hunting,#carriculum_content_menu_counseling").css("color", "#d2116f");
 		$("#carriculum_content_interview,#carriculum_content_training,#carriculum_content_Job_hunting,#carriculum_content_counseling").hide();
 	});
 	$("#carriculum_content_menu_interview").click(function(){
 		$("#carriculum_content_interview").show();
-		$("#carriculum_content_menu_interview").css("background-color", "#f19319");
+		$("#carriculum_content_menu_interview").css("background-color", "#d2116f");
 		$("#carriculum_content_menu_interview").css("color", "#FFF");
 		$("#carriculum_content_menu_root,#carriculum_content_menu_training,#carriculum_content_menu_Job_hunting,#carriculum_content_menu_counseling").css("background-color", "#FFF");
-		$("#carriculum_content_menu_root,#carriculum_content_menu_training,#carriculum_content_menu_Job_hunting,#carriculum_content_menu_counseling").css("color", "#f19319");
+		$("#carriculum_content_menu_root,#carriculum_content_menu_training,#carriculum_content_menu_Job_hunting,#carriculum_content_menu_counseling").css("color", "#d2116f");
 		$("#carriculum_content_root,#carriculum_content_training,#carriculum_content_Job_hunting,#carriculum_content_counseling").hide();
 	});
 	$("#carriculum_content_menu_training").click(function(){
 		$("#carriculum_content_training").show();
-		$("#carriculum_content_menu_training").css("background-color", "#f19319");
+		$("#carriculum_content_menu_training").css("background-color", "#d2116f");
 		$("#carriculum_content_menu_training").css("color", "#FFF");
 		$("#carriculum_content_menu_root,#carriculum_content_menu_interview,#carriculum_content_menu_Job_hunting,#carriculum_content_menu_counseling").css("background-color", "#FFF");
-		$("#carriculum_content_menu_root,#carriculum_content_menu_interview,#carriculum_content_menu_Job_hunting,#carriculum_content_menu_counseling").css("color", "#f19319");
+		$("#carriculum_content_menu_root,#carriculum_content_menu_interview,#carriculum_content_menu_Job_hunting,#carriculum_content_menu_counseling").css("color", "#d2116f");
 		$("#carriculum_content_root,#carriculum_content_interview,#carriculum_content_Job_hunting,#carriculum_content_counseling").hide();
 	});
 	$("#carriculum_content_menu_Job_hunting").click(function(){
 		$("#carriculum_content_Job_hunting").show();
-		$("#carriculum_content_menu_Job_hunting").css("background-color", "#f19319");
+		$("#carriculum_content_menu_Job_hunting").css("background-color", "#d2116f");
 		$("#carriculum_content_menu_Job_hunting").css("color", "#FFF");
 		$("#carriculum_content_menu_root,#carriculum_content_menu_interview,#carriculum_content_menu_training,#carriculum_content_menu_counseling").css("background-color", "#FFF");
-		$("#carriculum_content_menu_root,#carriculum_content_menu_interview,#carriculum_content_menu_training,#carriculum_content_menu_counseling").css("color", "#f19319");
+		$("#carriculum_content_menu_root,#carriculum_content_menu_interview,#carriculum_content_menu_training,#carriculum_content_menu_counseling").css("color", "#d2116f");
 		$("#carriculum_content_root,#carriculum_content_interview,#carriculum_content_training,#carriculum_content_counseling").hide();
 	});
 	$("#carriculum_content_menu_counseling").click(function(){
 		$("#carriculum_content_counseling").show();
-		$("#carriculum_content_menu_counseling").css("background-color", "#f19319");
+		$("#carriculum_content_menu_counseling").css("background-color", "#d2116f");
 		$("#carriculum_content_menu_counseling").css("color", "#FFF");
 		$("#carriculum_content_menu_root,#carriculum_content_menu_interview,#carriculum_content_menu_training,#carriculum_content_menu_Job_hunting").css("background-color", "#FFF");
-		$("#carriculum_content_menu_root,#carriculum_content_menu_interview,#carriculum_content_menu_training,#carriculum_content_menu_Job_hunting").css("color", "#f19319");
+		$("#carriculum_content_menu_root,#carriculum_content_menu_interview,#carriculum_content_menu_training,#carriculum_content_menu_Job_hunting").css("color", "#d2116f");
 		$("#carriculum_content_root,#carriculum_content_interview,#carriculum_content_training,#carriculum_content_Job_hunting").hide();
 	});
 });
+
+
+/*=================================
+		用語集ページ用
+=================================*/
+/*用語集のアコーディオン*/
+$(function(){
+	$(".term_word").click(function(){
+		$(this).next().slideToggle();
+		$(this).toggleClass("term_active");
+	});
+});
+

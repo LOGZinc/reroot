@@ -11,7 +11,11 @@ Template Name: signage
 get_header(); ?>
 <section class="PageCommonSetting">
 	<div class="container">
+		<div class="page_common_headeing_area">
 		<h1 class="page_common_headeing">表記について</h1>
+			<p class="page_common_small">個人情報の取り扱いについて。</p>
+		</div>
+		<span class="triangle"></span>
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
 				<div class="signage_area">

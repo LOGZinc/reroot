@@ -12,68 +12,41 @@ Template Name: useful_info
 get_header(); ?>
 <section class="PageCommonSetting">
 	<div class="container">
-		<h1 class="page_common_headeing">お役立情報</h1>
+		<div class="page_common_headeing_area">
+			<h1 class="page_common_headeing">お役立情報</h1>
+			<p class="page_common_small">就労関係のお役に立つような情報をお伝えいたします！</p>
+		</div>
+		<span class="triangle"></span>
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
 				<div class="useful_info_area">
+			<?php if (have_posts()) : query_posts('post_type=useful_info&posts_per_page=2&order=ASC'); ?>
+	 		<?php while (have_posts()) : the_post(); ?>
 					<div class="useful_info_archive">
 						<div class="useful_info_archive_title">
-							<p>東京都の就労移行支援事業所・就労継続支援A/B型事業所</p>
+							<p><?php the_title(); ?></p>
 						</div>
-						<img src="<?php echo get_template_directory_uri(); ?>/img/blog_sample3.jpg" alt="">
+						<?php if ( has_post_thumbnail() ) { the_post_thumbnail( 'post-thumbnail'); } ?>
 						<div class="useful_info_archive_text">
-							<p>ここでは、東京都文京区、千葉県市川市、千葉県浦安市などの就労移行支援事業所、就労継続支援A型・B型事業所をご紹介いたします。 また、それらを利用するために必要なサービス等利用計画を作成する指定相談支援事業所や医療機関についてご紹介いたします。</p>
+							<p><?php the_content(); ?></p>
 						</div>
 						<div class="clearfix"></div>
 					</div>
-					<div class="useful_info_archive">
-						<div class="useful_info_archive_title">
-							<p>東京都の就労移行支援事業所・就労継続支援A/B型事業所</p>
-						</div>
-						<img src="<?php echo get_template_directory_uri(); ?>/img/blog_sample1.jpg" alt="">
-						<div class="useful_info_archive_text">
-							<p>ここでは、東京都文京区、千葉県市川市、千葉県浦安市などの就労移行支援事業所、就労継続支援A型・B型事業所をご紹介いたします。 また、それらを利用するために必要なサービス等利用計画を作成する指定相談支援事業所や医療機関についてご紹介いたします。</p>
-						</div>
-						<div class="clearfix"></div>
-					</div>
-					<div class="useful_info_archive">
-						<div class="useful_info_archive_title">
-							<p>東京都の就労移行支援事業所・就労継続支援A/B型事業所</p>
-						</div>
-						<img src="<?php echo get_template_directory_uri(); ?>/img/blog_sample3.jpg" alt="">
-						<div class="useful_info_archive_text">
-							<p>ここでは、東京都文京区、千葉県市川市、千葉県浦安市などの就労移行支援事業所、就労継続支援A型・B型事業所をご紹介いたします。 また、それらを利用するために必要なサービス等利用計画を作成する指定相談支援事業所や医療機関についてご紹介いたします。</p>
-						</div>
-						<div class="clearfix"></div>
-					</div>
-					<div class="useful_info_archive">
-						<div class="useful_info_archive_title">
-							<p>東京都の就労移行支援事業所・就労継続支援A/B型事業所</p>
-						</div>
-						<img src="<?php echo get_template_directory_uri(); ?>/img/blog_sample1.jpg" alt="">
-						<div class="useful_info_archive_text">
-							<p>ここでは、東京都文京区、千葉県市川市、千葉県浦安市などの就労移行支援事業所、就労継続支援A型・B型事業所をご紹介いたします。 また、それらを利用するために必要なサービス等利用計画を作成する指定相談支援事業所や医療機関についてご紹介いたします。</p>
-						</div>
-						<div class="clearfix"></div>
-					</div>
-					<div class="useful_info_archive">
-						<div class="useful_info_archive_title">
-							<p>東京都の就労移行支援事業所・就労継続支援A/B型事業所</p>
-						</div>
-						<img src="<?php echo get_template_directory_uri(); ?>/img/blog_sample2.jpg" alt="">
-						<div class="useful_info_archive_text">
-							<p>ここでは、東京都文京区、千葉県市川市、千葉県浦安市などの就労移行支援事業所、就労継続支援A型・B型事業所をご紹介いたします。 また、それらを利用するために必要なサービス等利用計画を作成する指定相談支援事業所や医療機関についてご紹介いたします。</p>
-						</div>
-						<div class="clearfix"></div>
-					</div>
-					<div class="row">
-						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-							<span class="more_btn"><a href="#" title="">もっと見る</a></span>
-						</div>
-					</div>
+											<?php
+						endwhile; // 繰り返し処理終了
+						else : ?>
+						<?php endif; ?>
 				</div>
 			</div>
 		</div>
+						<div class="pagenatin_area">
+							<?php
+							//Pagenation
+							if (function_exists("pagination")) {
+								pagination($additional_loop->max_num_pages);
+							}
+							?>
+						</div>
 	</div>
 </section>
 <?php

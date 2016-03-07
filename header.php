@@ -128,5 +128,20 @@
 				</p>
 			</div>
 		</div>
-		<?php endif; ?>
+	<div class="top_gallery_area">
+		<div class="top_gallery_slider">
+		  <div><img src="<?php echo get_template_directory_uri(); ?>/img/gallary_01.jpg"></div>
+		  <div><img src="<?php echo get_template_directory_uri(); ?>/img/gallary_02.jpg"></div>
+		  <div><img src="<?php echo get_template_directory_uri(); ?>/img/gallary_03.jpg"></div>
+		  <div><img src="<?php echo get_template_directory_uri(); ?>/img/gallary_04.jpg"></div>
+		  <div><img src="<?php echo get_template_directory_uri(); ?>/img/gallary_05.jpg"></div>
+		  <div><img src="<?php echo get_template_directory_uri(); ?>/img/gallary_06.jpg"></div>
+		  <div><img src="<?php echo get_template_directory_uri(); ?>/img/gallary_07.jpg"></div>
+		  <div><img src="<?php echo get_template_directory_uri(); ?>/img/gallary_08.jpg"></div>
+		  <div><img src="<?php echo get_template_directory_uri(); ?>/img/gallary_09.jpg"></div>
+		  <div><img src="<?php echo get_template_directory_uri(); ?>/img/gallary_10.jpg"></div>
+		  <div><img src="<?php echo get_template_directory_uri(); ?>/img/gallary_11.jpg"></div>
+		</div>
+	</div>
+	<?php endif; ?>
     </header>

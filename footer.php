@@ -15,16 +15,16 @@
 			<div class="container">
 				<div class="row row-10">
 					<div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
-						<a href="/よくある質問" title=""><img src="<?php echo get_template_directory_uri(); ?>/img/banner_glossary.png" alt=""></a>
+						<a href="/用語集" title=""><img src="<?php echo get_template_directory_uri(); ?>/img/banner_glossary.png" alt=""></a>
 					</div>
 					<div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
-						<a href="/よくある質問" title=""><img src="<?php echo get_template_directory_uri(); ?>/img/banner_glossary.png" alt=""></a>
+						<a href="/スタッフ紹介" title=""><img src="<?php echo get_template_directory_uri(); ?>/img/banner_staff.png" alt=""></a>
 					</div>
 					<div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
-						<a href="/よくある質問" title=""><img src="<?php echo get_template_directory_uri(); ?>/img/banner_glossary.png" alt=""></a>
+						<a href="/よくある質問" title=""><img src="<?php echo get_template_directory_uri(); ?>/img/banner_question.png" alt=""></a>
 					</div>
 					<div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
-						<a href="/よくある質問" title=""><img src="<?php echo get_template_directory_uri(); ?>/img/banner_glossary.png" alt=""></a>
+						<a href="http://logz.co.jp/" title=""><img src="<?php echo get_template_directory_uri(); ?>/img/banner_logz.png" alt=""></a>
 					</div>
 				</div>
 			</div>
@@ -57,7 +57,7 @@
 	        slidesToShow: 3,
 	        slidesToScroll: 1,
 	        arrows: true,
-	        dots: false,
+	        dots: true,
 	        fade: false,
 	        asNavFor: '.gallery_slider_nav',
 	        responsive: [
@@ -82,6 +82,80 @@
 	              breakpoint: 480,
 	              settings: {
 	                slidesToShow: 1,
+	                slidesToScroll: 1,
+	                dots: false
+	              }
+	            }
+	          ]
+	    });
+	    $('.gallery_slider_nav').slick({
+	        slidesToShow: 8,
+	        slidesToScroll: 1,
+	        asNavFor: '.gallery_slider',
+	        dots: false,
+	        centerMode: true,
+	        focusOnSelect: true,
+	        arrows:  true,
+	        prevArrow: $('.slick-prev'),
+	        nextArrow: $('.slick-next'),
+	        responsive: [
+	            {
+	              breakpoint: 1024,
+	              settings: {
+	                slidesToShow: 5,
+	                slidesToScroll: 1,
+	                infinite: true,
+	                dots: true
+	              }
+	            },
+	            {
+	              breakpoint: 600,
+	              settings: {
+	                slidesToShow: 5,
+	                slidesToScroll: 1
+	              }
+	            },
+	            {
+	              breakpoint: 480,
+	              settings: {
+	                slidesToShow: 2,
+	                slidesToScroll: 1
+	              }
+	            }
+	          ]
+	    });
+
+$('.top_gallery_slider').slick({
+	        slidesToShow: 5,
+	        slidesToScroll: 1,
+	        arrows: false,
+	        dots: false,
+	        fade: false,
+	        autoplay: true,
+  			autoplaySpeed: 2000,
+	        asNavFor: '.gallery_slider_nav',
+	        responsive: [
+	            {
+	              breakpoint: 1024,
+	              settings: {
+	                slidesToShow: 5,
+	                slidesToScroll: 1,
+	                infinite: true,
+	                dots: false
+	              }
+	            },
+	            {
+	              breakpoint: 600,
+	              settings: {
+	                slidesToShow: 4,
+	                slidesToScroll: 1,
+	                dots: false
+	              }
+	            },
+	            {
+	              breakpoint: 480,
+	              settings: {
+	                slidesToShow: 3,
 	                slidesToScroll: 1,
 	                dots: false
 	              }

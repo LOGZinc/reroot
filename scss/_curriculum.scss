@@ -1,3 +1,10 @@
+.carriculum_content{
+
+	img{
+		transition: all 0.7s;
+	}
+}
+
 /*=========================
 　　　　　XS部分
 =========================*/
@@ -9,20 +16,32 @@
 		margin-bottom: 10px;
 	}
 
+	p{
+		font-size: 1rem;
+		line-height: 1.7;
+	}
+
 }
 
 .carriculum_menu{
-	color: $orange;
+	color: $pink;
 	background-color: #fff;
 
 	li{
 		list-style-type: none;
-		padding: 20px;
+		padding: 20px 0px;
 		cursor: pointer;
+		border-radius: 10px;
+		margin: 0px 0px 10px 10px;
+		width: 47%;
+		box-sizing: content-box;
+		text-align: center;
+		float: left;
+		background-color: #fff;
 
 		&:first-child{
 			color: #fff;
-			background-color: $orange;
+			background-color: $pink;
 		}
 	}
 }
@@ -36,6 +55,7 @@
 		background-color: #fff;
 		color: $orange;
 }
+
 
 #carriculum_content_root{
 
@@ -87,7 +107,6 @@
 
 .carriculum_content{
 	width: 100%;
-	border: 1px dotted $orange;
 	height: auto;/*試し*/
 	background: #fff;
 	padding: 30px;
@@ -95,7 +114,7 @@
 	.carriculum_content_step_namber{
 		display: block;
 		font-size: 0.9rem;
-		color: $orange;
+		color: $pink;
 	}
 
 	h1{
@@ -110,6 +129,7 @@
 		width: 100%;
 		margin: 20px auto;
 		font-size: 1rem;
+		line-height: 1.7;
 	}
 }
 
@@ -129,17 +149,25 @@
 }
 
 .carriculum_menu{
-	color: $orange;
+	color: $pink;
 	background-color: #fff;
 
 	li{
 		list-style-type: none;
-		padding: 20px;
+		padding: 20px 0px;
 		cursor: pointer;
+		border-radius: 10px;
+		margin: 0px 0px 10px 10px;
+		width: 18.6%;
+		box-sizing: content-box;
+		text-align: center;
+		float: left;
+		background-color: #fff;
 
 		&:first-child{
 			color: #fff;
-			background-color: $orange;
+			background-color: $pink;
+			margin-left: 0px;
 		}
 	}
 }
@@ -204,7 +232,6 @@
 
 .carriculum_content{
 	width: 100%;
-	border: 1px dotted $orange;
 	height: auto;/*試し*/
 	background: #fff;
 	padding: 30px;
@@ -212,7 +239,7 @@
 	.carriculum_content_step_namber{
 		display: block;
 		font-size: 0.9rem;
-		color: $orange;
+		color: $pink;
 	}
 
 	h1{
@@ -227,6 +254,7 @@
 		width: 90%;
 		margin: 20px auto;
 		font-size: 1rem;
+		line-height: 1.7;
 	}
 }
 }
@@ -245,17 +273,25 @@
 }
 
 .carriculum_menu{
-	color: $orange;
+	color: $pink;
 	background-color: #fff;
 
 	li{
 		list-style-type: none;
-		padding: 20px;
+		padding: 20px 0px;
 		cursor: pointer;
+		border-radius: 10px;
+		margin: 0px 0px 10px 10px;
+		width: 19%;
+		box-sizing: content-box;
+		text-align: center;
+		float: left;
+		background-color: #fff;
 
 		&:first-child{
 			color: #fff;
-			background-color: $orange;
+			background-color: $pink;
+			margin-left: 0px;
 		}
 	}
 }
@@ -320,7 +356,6 @@
 
 .carriculum_content{
 	width: 100%;
-	border: 1px dotted $orange;
 	height: auto;/*試し*/
 	background: #fff;
 	padding: 30px;
@@ -328,7 +363,7 @@
 	.carriculum_content_step_namber{
 		display: block;
 		font-size: 0.9rem;
-		color: $orange;
+		color: $pink;
 	}
 
 	h1{
@@ -352,45 +387,59 @@
 　　　　　部分
 =========================*/
 @media screen and (min-width: 1200px) {
-.curriculum_step_area{
-	margin-bottom: 40px;
-	img{
-		width: 100%;
-		margin-bottom: 10px;
-	}
 
+.curriculum_steps_area{
+	border-bottom: 1px dotted $orange;
+	margin-bottom: 40px;
+
+	.curriculum_step_area{
+		margin-bottom: 40px;
+		img{
+			width: 100%;
+			margin-bottom: 10px;
+		}
+
+	}
 }
 
 .carriculum_menu{
-	color: $orange;
+	color: $pink;
 	background-color: #fff;
 
 	li{
 		list-style-type: none;
-		padding: 20px;
+		padding: 20px 0px;
 		cursor: pointer;
+		border-radius: 10px;
+		margin: 0px 0px 10px 10px;
+		width: 19.2%;
+		box-sizing: content-box;
+		text-align: center;
+		float: left;
+		background-color: #fff;
 
 		&:first-child{
 			color: #fff;
-			background-color: $orange;
+			background-color: $pink;
+			margin-left: 0px;
 		}
 	}
 }
 
 .carriculum_menu_active{
-		background-color: $orange;
-		color: #fff;
+		background-color: #fff;
+		color: $pink;
 }
 
 .carriculum_menu_remove{
 		background-color: #fff;
-		color: $orange;
+		color: $pink;
 }
 
 #carriculum_content_root{
 
 	img{
-		width: 300px;
+		width: 350px;
 		padding: 10px;
 		display: inline-block;
 	}
@@ -400,7 +449,7 @@
 	display: none;
 
 	img{
-		width: 300px;
+		width: 350px;
 		padding: 10px;
 		display: inline-block;
 	}
@@ -410,7 +459,7 @@
 	display: none;
 
 	img{
-		width: 300px;
+		width: 350px;
 		padding: 10px;
 		display: inline-block;
 	}
@@ -420,7 +469,7 @@
 	display: none;
 
 	img{
-		width: 90%;
+		width: 80%;
 		padding: 10px;
 	}
 }
@@ -429,7 +478,7 @@
 	display: none;
 
 	img{
-		width: 300px;
+		width: 350px;
 		padding: 10px;
 		display: inline-block;
 	}
@@ -437,15 +486,15 @@
 
 .carriculum_content{
 	width: 100%;
-	border: 1px dotted $orange;
 	height: auto;/*試し*/
 	background: #fff;
-	padding: 30px;
+	padding: 50px;
+	border-radius: 10px;
 
 	.carriculum_content_step_namber{
 		display: block;
 		font-size: 0.9rem;
-		color: $orange;
+		color: $pink;
 	}
 
 	h1{

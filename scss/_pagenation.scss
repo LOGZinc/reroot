@@ -1,0 +1,52 @@
+/*Pagenation*/
+.pagenatin_area{
+    margin: 20px 0px;
+    padding: 10px 0px;
+    border-top: 1px dotted #e4e4e4;
+}
+
+.pagenation {
+    margin: 1em 0rem;
+}
+.pagenation:after, .pagenation ul:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+.pagenation ul {
+    margin: 0;
+}
+.pagenation li {
+    float: left;
+    list-style: none outside none;
+    margin-left: 3px;
+}
+.pagenation li:first-child {
+    margin-left: 0;
+}
+.pagenation li.active {
+    background-color: $light_orange;
+    border-radius: 3px;
+    color: #FFFFFF;
+    cursor: not-allowed;
+    padding: 10px 20px;
+}
+.pagenation li a {
+    background: none repeat scroll 0 0 #e4e4e4;
+    border-radius: 3px;
+    color: #FFFFFF;
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+}
+.pagenation li a:hover {
+    background-color: #444444;
+    color: #FFFFFF;
+    opacity: 0.8;
+    transition-duration: 500ms;
+    transition-property: all;
+    transition-timing-function: ease;
+}
